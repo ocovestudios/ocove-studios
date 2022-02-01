@@ -1,0 +1,16 @@
+@font-face {
+    font-family: neue;
+    src: url(../../public/fonts/NeueHaasDisplayRoman.ttf);
+}
+
+@font-face {
+    font-family: dx;
+    src: url(../../public/fonts/DxSitrus.otf);
+}
+
+$main-font: neue;
+$second-font: dx;
+
+body {
+    font-family: $main-font;
+}

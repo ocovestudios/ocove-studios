@@ -1,0 +1,10 @@
+.project--container {
+    .project--back-arrow {
+        font-size: 2rem;
+        width: fit-content;
+
+        &:hover {
+            cursor: pointer;
+        }
+    }
+}

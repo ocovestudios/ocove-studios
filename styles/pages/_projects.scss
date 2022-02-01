@@ -1,0 +1,11 @@
+.projects--container {
+    .projects--list {
+        list-style-type: none;
+
+        .projects--links {
+            &:hover {
+                cursor: pointer;
+            }
+        }
+    }
+}

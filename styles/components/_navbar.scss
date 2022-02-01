@@ -1,0 +1,31 @@
+.nav {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+
+    .nav--links--list {
+        list-style-type: none;
+        display: flex;
+
+        li {
+            padding: 0.5rem 1rem;
+        }
+
+        .nav--link {
+            &:hover {
+                cursor: pointer;
+            }
+        }
+
+        .nav--link-home {
+            display: none;
+        }
+
+        @media (min-width: 850px) {
+            .nav--link-home {
+                display: initial;
+            }
+        }
+    }
+}
