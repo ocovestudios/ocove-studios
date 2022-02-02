@@ -3,7 +3,6 @@ import { projectData } from "../../projectsData";
 import Link from "next/link";
 
 const Project = ({ projectData }) => {
-    console.log(projectData)
     return (
         <>
             <Navbar />
