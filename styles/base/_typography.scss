@@ -4,12 +4,12 @@
 }
 
 @font-face {
-    font-family: dx;
-    src: url(../../public/fonts/DxSitrus.otf);
+    font-family: eiko;
+    src: url(../../public/fonts/PPEiko-Thin.otf)
 }
 
 $main-font: neue;
-$second-font: dx;
+$second-font: eiko;
 
 body {
     font-family: $main-font;
