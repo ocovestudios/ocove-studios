@@ -8,3 +8,9 @@
 @import 'pages/projects';
 @import 'pages/projectPage';
 @import 'pages/services';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}

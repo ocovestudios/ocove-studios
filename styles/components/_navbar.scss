@@ -3,27 +3,45 @@
     width: 100%;
     justify-content: space-between;
     align-items: center;
+    padding: 0.5rem 1rem 0.5rem 1.3rem;
 
-    .nav--links--list {
+    .nav__logo {
+        width: 80px;
+        height: 42px;
+        &:hover {
+            cursor: pointer;
+        }
+    }
+
+    .nav__line {
+        width: 60%;
+        height: 1.2px;
+        background-color: #292929
+    }
+
+    .nav__links-list {
         list-style-type: none;
         display: flex;
+        
+        font-size: $nav-fs;
 
         li {
             padding: 0.5rem 1rem;
         }
 
-        .nav--link {
+        .nav__link {
             &:hover {
                 cursor: pointer;
+                color: #535353
             }
         }
 
-        .nav--link-home {
-            display: none;
-        }
+        // .nav__link-home {
+        //     display: none;
+        // }
 
         @media (min-width: 850px) {
-            .nav--link-home {
+            .nav__link-home {
                 display: initial;
             }
         }
