@@ -2,10 +2,16 @@ import Navbar from "../components/navbar";
 
 const Services = () => {
     return (
-        <div>
+        <>
             <Navbar />
-            <h2>Services</h2>
-        </div>
+            <div className="services--container">
+                <h2 className="services--title">What we do</h2>
+                <div className="services--content-container">
+
+                </div>
+            </div>
+        </>
+
     );
 }
 

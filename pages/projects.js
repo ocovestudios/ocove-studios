@@ -9,9 +9,9 @@ const Projects = () => {
             <div className="projects--container">
                 <h2>Projects</h2>
                 <ul className="projects--list">
-                    {projectData.map((project) => {
+                    {projectData.map((project, index) => {
                         return (
-                            <Link href={`/projects/${project.id}`}><li><a className="projects--links">{project.title}</a></li></Link>
+                            <Link href={`/projects/${project.id}`} key={index}><li ><a className="projects--links">{project.title}</a></li></Link>
                         )
                     })}
                 </ul>
