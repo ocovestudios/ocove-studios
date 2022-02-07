@@ -1,7 +1,9 @@
 .services--container {
     width: 100%;
     margin: 0 auto;
-    padding-top: 10vh;
+    padding-top: 15vh;
+    position: relative;
+    z-index: -1;
 
     .services--header-container {
         display: flex;

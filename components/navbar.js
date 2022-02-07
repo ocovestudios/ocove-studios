@@ -2,6 +2,7 @@ import Link from "next/link";
 import NavbarLogo from "../components/navbarlogo"
 
 const Navbar = () => {
+
     return (
         <nav className="global-nav nav">
             <Link href='/'><NavbarLogo /></Link>

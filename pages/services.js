@@ -8,10 +8,10 @@ const Services = () => {
             <Navbar />
             <div className="services--container">
                 <div className="services--header-container">
-                    <motion.h2 className="services--header-title" initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 1, dela: 0.5 }} >What we do</motion.h2>
+                    <motion.h2 className="services--header-title" initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 1 }} >What we do</motion.h2>
                     <HeaderArrow />
                 </div>
-                <div className="services--content-container">
+                <motion.div className="services--content-container" initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.5, duration: 1 }}>
                     <div className="services--content">
                         <div className="services--asset-container">
                             <div className="services--asset"></div>
@@ -34,7 +34,7 @@ const Services = () => {
                         </div>
                         <p className="services--content-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu auctor nisi. Suspendisse potenti. Nulla consequat magna in nisl euismod, sed mollis velit bibendum. Aliquam in nulla lorem. </p>
                     </div>
-                </div>
+                </motion.div>
                 <div className="services--header-container services--contact-header">
                     <HeaderArrow />
                     <motion.h2 className="services--header-title services--contact-title" initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 1, dela: 0.5 }} >Contact</motion.h2>
