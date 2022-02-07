@@ -38,11 +38,7 @@ class World {
         plane.material.bumpMap = texture;
 
         const lightScroller = new Scroller(spotLight, 50);
-        const planeScroller = new Scroller(plane, 5000)
         lightScroller.onScroll = () => {
-            this.render();
-        }
-        planeScroller.onScroll = () => {
             this.render();
         }
 

@@ -1,5 +1,5 @@
 const setObjPosition = (obj, multiplier) => {
-    obj.position.x = window.scrollY / multiplier;
+    obj.position.x = - 5 + window.scrollY / multiplier;
     obj.position.y = window.scrollY / multiplier / 100;
 };
 
