@@ -6,10 +6,6 @@ const Project = ({ projectData }) => {
     return (
         <>
             <Navbar />
-            <div className="project--container">
-                <Link href='/projects'><p className="project--back-arrow">&#8592;</p></Link>
-                {projectData.title}
-            </div>
         </>
 
     );
