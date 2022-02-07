@@ -6,13 +6,13 @@ import { Resizer } from './systems/Resizer'
 import { createSpheresArray } from "./components/createSphere";
 import { Scroller } from "./systems/Scroller";
 import { createPlane } from "./components/createPlane";
+import {TextureLoader} from "three"
 
 let camera;
 let scene;
 let renderer;
 let resizer;
 let loop;
-let scroller;
 
 class World {
     constructor(container) {
@@ -23,15 +23,31 @@ class World {
         container.append(renderer.domElement);
 
         const spheres = createSpheresArray()
+        const plane = createPlane()
         const spotLight = createSpotLight();
         const directionalLight = createDirectionalLight();
 
-        scroller = new Scroller(spotLight);
-        scroller.onScroll = () => {
+        const texture = new TextureLoader()
+            .load('../textures/bump.png', 
+                function() {
+                    renderer.render(scene, camera); 
+                    console.log(plane.material)
+                }
+            )
+
+        plane.material.bumpMap = texture;
+
+        const lightScroller = new Scroller(spotLight, 50);
+        const planeScroller = new Scroller(plane, 5000)
+        lightScroller.onScroll = () => {
+            this.render();
+        }
+        planeScroller.onScroll = () => {
             this.render();
         }
 
-        scene.add(spotLight, createPlane());
+        scene.add(spotLight, plane);
+
 
         resizer.onResize = () => {
             this.render();

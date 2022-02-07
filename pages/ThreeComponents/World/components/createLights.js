@@ -1,10 +1,9 @@
 import { SpotLight, DirectionalLight } from "three"
 
 const createSpotLight = () => {
-    const light = new SpotLight('white', 20);
+    const light = new SpotLight('white', 30);
     light.castShadow = true;
-    light.shadowDarkness = .1;
-    light.position.set(10, 10, 10)
+    light.position.set(20, 20, 10)
 
     return light;
 }

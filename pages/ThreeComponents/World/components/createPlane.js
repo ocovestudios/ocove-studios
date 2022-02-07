@@ -1,29 +1,13 @@
 import { Perlin } from "../textures/createPerlinNoise"
-import { PlaneGeometry, MeshStandardMaterial } from "three";
+import { PlaneBufferGeometry, MeshLambertMaterial, PlaneGeometry, MeshStandardMaterial, SmoothShading } from "three";
 import { Mesh } from "three";
+import { degToRad } from "three/src/math/MathUtils";
+import { TextureLoader } from "three";
 
 const createPlane = () => {
-    const geo = new PlaneGeometry(1000, 1000)
-    const mat = new MeshStandardMaterial({color: 'white'})
-    const mesh = new Mesh(geo, mat)
-
-    console.log(mesh)
-
-    var perlin = new Perlin();
-    var peak = 60;
-    var smoothing = 300;
-    function refreshVertices() {
-        var vertices = mesh.geometry.attributes.position.array;
-        for (var i = 0; i <= vertices.length; i += 3) {
-            vertices[i+2] = peak * perlin.noise(
-                (terrain.position.x + vertices[i])/smoothing, 
-                (terrain.position.z + vertices[i+1])/smoothing
-            );
-        }
-        terrain.geometry.attributes.position.needsUpdate = true;
-        terrain.geometry.computeVertexNormals();
-    }
-
+    const geometry = new PlaneGeometry( 5, 5 );
+    const material = new MeshStandardMaterial({color: 'white', bumpScale: .1});
+    const mesh = new Mesh( geometry, material );
     return mesh;
 }
 
