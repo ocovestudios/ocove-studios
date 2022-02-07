@@ -1,14 +1,14 @@
-import { PerspectiveCamera } from "three";
+import { PerspectiveCamera, OrthographicCamera } from "three";
 
 const createCamera = () => {
     const camera = new PerspectiveCamera(
-        75, 
+        1, 
         window.innerWidth/window.innerHeight, 
         0.1, 
         1000
     );
     
-    camera.position.set(0, 0, 3);
+    camera.position.set(0, 0, 100);
 
     return camera;
 }
