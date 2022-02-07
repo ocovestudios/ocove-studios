@@ -5,6 +5,7 @@ import { createSpotLight, createDirectionalLight } from './components/createLigh
 import { Resizer } from './systems/Resizer'
 import { createSpheresArray } from "./components/createSphere";
 import { Scroller } from "./systems/Scroller";
+import { createPlane } from "./components/createPlane";
 
 let camera;
 let scene;
@@ -25,14 +26,12 @@ class World {
         const spotLight = createSpotLight();
         const directionalLight = createDirectionalLight();
 
-        spheres.forEach(sphere => scene.add(sphere))
-
         scroller = new Scroller(spotLight);
         scroller.onScroll = () => {
             this.render();
         }
 
-        scene.add(spotLight, directionalLight[0], directionalLight[1]);
+        scene.add(spotLight, createPlane());
 
         resizer.onResize = () => {
             this.render();
