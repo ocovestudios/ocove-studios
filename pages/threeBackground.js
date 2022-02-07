@@ -8,7 +8,10 @@ const ThreeBackground = (props) => {
     }, []);
 
     return ( 
+        <>
         <div className="three--background--container" ref={e => threeContainer.current = e}></div>
+        <div className="three--background--container"></div>
+        </>
     );
 }
  
