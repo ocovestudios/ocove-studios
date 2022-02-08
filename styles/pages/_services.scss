@@ -1,9 +1,8 @@
 .services--container {
     width: 100%;
     margin: 0 auto;
-    padding-top: 15vh;
+    margin-top: 7em;
     position: relative;
-    z-index: -1;
 
     .services--header-container {
         display: flex;
@@ -33,6 +32,10 @@
                 margin-left: 2rem;
             }
         }
+    }
+
+    .services--contact-header {
+        margin-top: 10vh;
     }
 
     @media(min-width: 850px) {
@@ -86,12 +89,13 @@
             .services--content {
                 flex-direction: row;
                 margin-bottom: 10vh;
+                min-height: 30vh;
 
                 .services--asset-container {
                     display: flex;
                     flex-direction: column;
                     align-items: center;
-    
+                    
                     .services--asset {
                         width: 12vw;
                         height: 12vw;
@@ -103,12 +107,64 @@
                     }
                 }
 
+                .services--asset-container-2 {
+                    position: absolute;
+                    right: 15%;
+                }
+
                 .services--content-text {
                     width: 50%;
                     margin: 0 auto;
                     text-align: left;
                 }
+
+                .services-content-text-2 {
+                    float: left;
+                }
             }            
         }   
+    }
+
+     //Contact Section
+
+    .services__form-container {
+        position: relative;
+        width: 100%;
+
+        .services__form-button {
+            width: fit-content;
+            border: 1px solid black;
+            border-top: 2px solid black;
+            padding: 0.5rem 3rem;
+            font-size: 2rem;
+            background-color: white;
+            display: block;
+            margin: auto;
+        }
+    }
+
+    .services__contact-container {
+        .contact__list {
+            margin-left: 10%;
+            margin-top: 20vh;
+            margin-bottom: 20vh;
+            width: 60%;
+
+            .contact__list-item {
+                padding: 0 15%;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+
+                .contact__name {
+                    font-size: 1.7rem;
+                    padding: 1rem;
+
+                    &:hover {
+                        cursor: pointer;
+                    }
+                }   
+            }
+        }
     }
 }

@@ -1,0 +1,31 @@
+.contact__form {
+    display: block;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    margin-top: 5vh;
+
+    .contact__form-details {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+
+        input {
+            border: none;
+            border-bottom: 1px solid black;
+            width: 48%;
+            user-select: none;
+            outline: none;
+        }
+    }
+
+    .contact__form-message {
+        width: 100%;
+        border: none;
+        border-bottom: 2px solid black;
+        margin-top: 2rem;
+        resize: none;
+        outline: none;
+    }
+}
