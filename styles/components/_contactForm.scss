@@ -29,3 +29,9 @@
         outline: none;
     }
 }
+
+@media(max-width: 850px) {
+    .contact__form {
+        width: 90%;
+    }
+}

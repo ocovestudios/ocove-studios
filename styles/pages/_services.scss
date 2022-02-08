@@ -1,8 +1,7 @@
 .services--container {
     width: 100%;
     margin: 0 auto;
-    margin-top: 7em;
-    position: relative;
+    margin-top: 6em;
 
     .services--header-container {
         display: flex;
@@ -35,7 +34,7 @@
     }
 
     .services--contact-header {
-        margin-top: 10vh;
+        margin-top: 10em;
     }
 
     @media(min-width: 850px) {
@@ -69,7 +68,8 @@
                 }
 
                 .services--asset-title {
-                    font-size: 0.8rem;
+                    font-size: 1rem;
+                    margin-top: 0.5rem;
                 }
             }
 
@@ -77,6 +77,8 @@
                 width: 100%;
                 font-size: 1rem;
                 text-align: center;
+                font-family: $second-font;
+                margin-top: 1rem;
             }
         }
     }
@@ -103,19 +105,21 @@
                     }
     
                     .services--asset-title {
-                        font-size: 1rem;
+                        font-size: 1.2rem;
                     }
                 }
 
                 .services--asset-container-2 {
                     position: absolute;
                     right: 15%;
+                    z-index: -1;
                 }
 
                 .services--content-text {
                     width: 50%;
                     margin: 0 auto;
                     text-align: left;
+                    font-size: 1.2rem;
                 }
 
                 .services-content-text-2 {
@@ -125,10 +129,9 @@
         }   
     }
 
-     //Contact Section
+    //Form, Section
 
     .services__form-container {
-        position: relative;
         width: 100%;
 
         .services__form-button {
@@ -143,22 +146,26 @@
         }
     }
 
+    //Contact Section
+
     .services__contact-container {
+        margin-bottom: 80vh;
+
         .contact__list {
             margin-left: 5%;
-            margin-top: 20vh;
+            margin-top: 4em;
             margin-bottom: 20vh;
-            width: 60%;
+            width: 90%;
 
             .contact__list-item {
-                padding: 0 15%;
+                padding: 0;
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
 
                 .contact__name {
                     font-size: 1.7rem;
-                    padding: 1rem;
+                    padding: 2rem 0;
 
                     &:hover {
                         cursor: pointer;
@@ -167,4 +174,27 @@
             }
         }
     }
+
+    @media(min-width: 850px) {
+        .services__contact-container {
+            .contact__list {
+                width: 60%;
+                margin-top: 20vh;
+
+                .contact__list-item {
+                    padding: 0 15%;
+
+                    .contact__name {
+                        padding: 1rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 850px) {
+    .services--container {
+        margin-top: 7em;
+    } 
 }
