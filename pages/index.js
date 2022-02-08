@@ -16,7 +16,7 @@ export default function Home() {
       </section>
 
       <section className="home2">
-        <div className="home2__info-container">
+        <div className="info-container">
           <p className="home2__info">
             <div>
               <div className="paragraph-arrow"><ParagraphArrow />
@@ -32,14 +32,15 @@ export default function Home() {
 
       <section className="home3">
         <div className="home3__left">
-          <div className="home3__info-container">
-            <div>
-            <p>Working as a collective allows us to bring our best creative assets to projects.</p>
-            <p><div className="paragraph-arrow"><ParagraphArrow />
-            </div>Collaborating as individuals, we can make things together that we couldn&#39;t alone.</p>
-            </div>
+          <div className="info-container">
+            <p className="home3__info">
+              Working as a collective allows us to bring our best creative assets to projects.</p>
+              <p className="home3__info"><div className="paragraph-arrow"><ParagraphArrow /></div>
+                Collaborating as individuals, we can make things together that we couldn&#39;t alone.
+            </p>
           </div>
         </div>
+
         <div className="home3__right">
           <div className="particle-container"></div>
           <button className="view-projects-button"> SEE OUR WORK </button>
