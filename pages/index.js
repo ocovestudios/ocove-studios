@@ -10,14 +10,14 @@ export default function Home() {
       <section className="home1">
         <BrandName />
         <div className="home1__footer">
-          <h4>CREATIVE DIGITAL SERVICES</h4>
-          <h4>CONTACT</h4>
+          <p>CREATIVE DIGITAL SERVICES</p>
+          <p>CONTACT</p>
         </div>
       </section>
 
       <section className="home2">
         <div className="home2__info-container">
-          <p>
+          <p className="home2__info">
             <div>
               <div className="paragraph-arrow"><ParagraphArrow />
               </div> We are a UK-based freelance collective </div>
@@ -33,10 +33,11 @@ export default function Home() {
       <section className="home3">
         <div className="home3__left">
           <div className="home3__info-container">
+            <div>
             <p>Working as a collective allows us to bring our best creative assets to projects.</p>
-            <p><div className="paragraphArrow">
-              <ParagraphArrow />
+            <p><div className="paragraph-arrow"><ParagraphArrow />
             </div>Collaborating as individuals, we can make things together that we couldn&#39;t alone.</p>
+            </div>
           </div>
         </div>
         <div className="home3__right">
