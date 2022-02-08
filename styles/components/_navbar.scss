@@ -8,7 +8,7 @@
     top: 0;
 
     .nav__logo {
-        min-width: 80px;
+        width: 80px;
         height: 42px;
         margin: 0 10px 0 0;
         &:hover {
@@ -49,7 +49,7 @@
             justify-content: space-evenly;
         }
         .nav__logo {
-            min-width: 70px;
+            width: 70px;
         }
         .nav__home {
             display: none;
