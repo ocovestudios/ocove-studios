@@ -1,0 +1,37 @@
+section {
+    height: 90vh;
+}
+
+.brand-name {
+    height: fit-content;
+    width: fit-content;
+    margin: 6% 5%;
+}
+
+.home1, .home2, .home3 {
+    display: flex;
+    justify-items: center;
+    align-content: center;
+}
+
+.home1__footer {
+    width: 100%;
+    position: absolute;
+    bottom: 0px;
+    display: flex;
+    justify-content: space-between;
+    padding: 3% 5%;
+    font-size: calc($nav-fs + 1px);
+}
+
+.home2, .home3 {
+    margin: 5%
+}
+
+.home2__info {
+    font-size: $home-body-fs;
+
+    .paragraph-arrow {
+        display: inline-block
+    }
+}
