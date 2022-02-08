@@ -1,13 +1,9 @@
-const setObjPosition = (obj, multiplier) => {
-    obj.position.x = - 5 + window.scrollY / multiplier;
-    obj.position.y = window.scrollY / multiplier / 100;
-};
-
 class Scroller {
-    constructor(obj, multiplier) {
-      setObjPosition(obj, multiplier)
+    constructor(scrollFunctions) {
+      for (let i = 0; i < scrollFunctions.length; i++) {
+        scrollFunctions[i]()
+      }
       window.addEventListener('scroll', () => {
-        setObjPosition(obj, multiplier)
         this.onScroll();
       });
     }
