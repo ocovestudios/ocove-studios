@@ -4,11 +4,6 @@
     align-items: center;
     padding: 0.5rem 1rem 0.5rem 1.3rem;
     position: fixed;
-<<<<<<< HEAD
-    width: 100vw;
-    z-index: 1;
-=======
->>>>>>> 0e26f57b15aceaa647784569ecf4c6b24beea83c
     top: 0;
 
     .nav__logo {
@@ -22,20 +17,13 @@
     .nav__line {
         width: 60%;
         height: 1.2px;
-<<<<<<< HEAD
-        background-color: #292929;
-=======
         background-color: #292929
->>>>>>> 0e26f57b15aceaa647784569ecf4c6b24beea83c
     }
 
     .nav__links-list {
         list-style-type: none;
         display: flex;
-<<<<<<< HEAD
-=======
         
->>>>>>> 0e26f57b15aceaa647784569ecf4c6b24beea83c
         font-size: $nav-fs;
 
         li {
