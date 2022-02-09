@@ -2,6 +2,7 @@ import Navbar from "../components/navbar";
 import BrandName from "../components/brandname"
 import ParagraphArrow from "../components/paragrapharrow"
 import HomeParticles from "../components/particles"
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -36,8 +37,8 @@ export default function Home() {
           <div className="info-container">
             <p className="home3__info">
               Working as a collective allows us to bring our best creative assets to projects.</p>
-              <p className="home3__info"><div className="paragraph-arrow"><ParagraphArrow /></div>
-                Collaborating as individuals, we can make things together that we couldn&#39;t alone.
+            <p className="home3__info"><div className="paragraph-arrow"><ParagraphArrow /></div>
+              Collaborating as individuals, we can make things together that we couldn&#39;t alone.
             </p>
           </div>
         </div>
@@ -46,7 +47,7 @@ export default function Home() {
           <div className="particle-container">
             <HomeParticles />
           </div>
-          <button className="view-projects-button"> SEE OUR WORK </button>
+          <Link href='/projects'><button className="view-projects-button"> SEE OUR WORK </button></Link>
         </div>
 
       </section>
