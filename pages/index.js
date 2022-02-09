@@ -1,6 +1,7 @@
 import Navbar from "../components/navbar";
 import BrandName from "../components/brandname"
 import ParagraphArrow from "../components/paragrapharrow"
+import HomeParticles from "../components/particles"
 
 export default function Home() {
   return (
@@ -42,7 +43,9 @@ export default function Home() {
         </div>
 
         <div className="home3__right">
-          <div className="particle-container"></div>
+          <div className="particle-container">
+            <HomeParticles />
+          </div>
           <button className="view-projects-button"> SEE OUR WORK </button>
         </div>
 

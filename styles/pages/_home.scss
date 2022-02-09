@@ -25,7 +25,7 @@ section {
 }
 
 .home2, .home3 {
-    margin: 6%;
+    margin: 2% 6%;
     display: flex;
     align-items: center;
 
@@ -38,7 +38,7 @@ section {
         display: inline-block;
         width: fit-content;
     }
-    
+
     .home2__info {
         font-size: $home-body-fs;
     }
@@ -54,7 +54,11 @@ section {
             width: 75%;
             margin: 0 0 8% 0;
         }
-    
+        
+        .particle-container {
+            height: 400px;
+        }
+
         .view-projects-button {
             border: 1px solid black;
             width: 320px;
