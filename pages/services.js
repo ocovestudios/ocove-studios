@@ -147,7 +147,7 @@ const Services = () => {
                     </ul>
 
                 </div>
-                <h2 className="contact__message">That&#39;s us. Check out our <span className="contact__highlight">work.</span><span><img src='img/globe.gif' className="contact__globe" /></span></h2>
+                <h2 className="contact__message">Drop us a <span className="contact__highlight">message.</span><span><img src='img/globe.gif' className="contact__globe" /></span></h2>
             </div>
         </>
 

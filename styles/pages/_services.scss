@@ -196,15 +196,20 @@
     }
 
     .contact__message {
-        font-size: 5rem;
-        margin-left: 10%;
+        font-size: 4rem;
+        margin-left: 15%;
         margin-right: 5%;
-        margin-bottom: 10vh;
+        padding-bottom: 1em;
         font-weight: 500;
 
         .contact__highlight {
             text-decoration: underline;
             text-decoration-thickness: 5px;
+            text-underline-offset: 0.3em;
+
+            &:hover {
+                cursor: pointer;
+            }
         }
 
         .contact__globe {
