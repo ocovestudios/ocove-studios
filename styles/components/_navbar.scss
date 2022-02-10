@@ -3,7 +3,7 @@
     width: 100vw;
     justify-content: space-between;
     align-items: center;
-    padding: 0.5rem 1rem 0.5rem 1.3rem;
+    padding: 0.7rem 1rem 0.5rem 1.3rem;
     position: fixed;
     top: 0;
 
@@ -13,8 +13,24 @@
         margin: 0 10px 0 0;
         &:hover {
             cursor: pointer;
-        }
+
+            .nav-logo-path {
+                stroke-dasharray: 1190;
+                stroke-dashoffset: 1000;
+                animation: drawNavLogo .8s linear forwards;
+              }
+
+              @keyframes drawNavLogo {
+                0%  {stroke-dashoffset: 0}
+                15% {stroke-dashoffset: 600}
+                50% {stroke-dashoffset: 1190}
+                55% {stroke-dashoffset: 1190}
+                85% {stroke-dashoffset: 500}
+                100% {stroke-dashoffset: 0}
+            }
+        } 
     }
+
     .nav__line {
         width: 60%;
         height: 1.2px;

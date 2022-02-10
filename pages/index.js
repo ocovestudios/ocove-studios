@@ -49,9 +49,7 @@ export default function Home() {
           </div>
           <Link href='/projects'><button className="view-projects-button"> SEE OUR WORK </button></Link>
         </div>
-
       </section>
-
     </>
   )
 }
