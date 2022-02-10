@@ -45,7 +45,6 @@ export default function Home() {
   return (
     <>
       <Navbar />
-
       <section className="home1">
         <BrandName />
         <motion.div className="home1__footer" variants={navParentVariants} initial="initial" animate="animate">
@@ -87,7 +86,6 @@ export default function Home() {
           <Link href='/projects'><motion.button className="view-projects-button" variants={info2RightVariants}> SEE OUR WORK </motion.button></Link>
         </motion.div>
       </section>
-
     </>
   )
 }
