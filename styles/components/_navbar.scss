@@ -1,51 +1,78 @@
 .nav {
     display: flex;
-    width: 100%;
+    width: 100vw;
     justify-content: space-between;
     align-items: center;
-    padding: 0.5rem 1rem 0.5rem 1.3rem;
+    padding: 0.7rem 1rem 0.5rem 1.3rem;
     position: fixed;
     top: 0;
+    z-index: 20;
 
     .nav__logo {
         width: 80px;
         height: 42px;
+        margin: 0 10px 0 0;
         &:hover {
             cursor: pointer;
-        }
+
+            .nav-logo-path {
+                stroke-dasharray: 1190;
+                stroke-dashoffset: 1000;
+                animation: drawNavLogo .8s linear forwards;
+              }
+
+              @keyframes drawNavLogo {
+                0%  {stroke-dashoffset: 0}
+                15% {stroke-dashoffset: 600}
+                50% {stroke-dashoffset: 1190}
+                55% {stroke-dashoffset: 1190}
+                85% {stroke-dashoffset: 500}
+                100% {stroke-dashoffset: 0}
+            }
+        } 
     }
 
     .nav__line {
         width: 60%;
         height: 1.2px;
-        background-color: #292929
+        background-color: #292929;
+    }
+    
+    @media (max-width: 500px) {
+        .nav__line {
+            display: none;
+        }
     }
 
     .nav__links-list {
         list-style-type: none;
         display: flex;
-        
         font-size: $nav-fs;
 
         li {
             padding: 0.5rem 1rem;
         }
-
         .nav__link {
             &:hover {
                 cursor: pointer;
                 color: #535353
             }
         }
+    }
 
-        // .nav__link-home {
-        //     display: none;
-        // }
-
-        @media (min-width: 850px) {
-            .nav__link-home {
-                display: initial;
-            }
+    @media (max-width: 850px) {
+        .nav {
+            display: flex;
+            justify-content: space-evenly;
+        }
+        .nav__logo {
+            width: 70px;
+        }
+        .nav__home {
+            display: none;
+        }
+        .nav__links-list {
+            font-size: calc($nav-fs + 3px);  
         }
     }
 }
