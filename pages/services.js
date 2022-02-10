@@ -154,7 +154,7 @@ const Services = () => {
                     </div>
                 </div>
 
-                <h2 className="contact__message">Drop us a <span className="contact__highlight">message.</span><span><img src='img/globe.gif' className="contact__globe" /></span></h2>
+                <h2 className="contact__message">Drop us an <span className="contact__highlight">email.</span><span><img src='img/globe.gif' className="contact__globe" /></span></h2>
             </div>
         </>
 
