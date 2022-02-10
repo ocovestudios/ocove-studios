@@ -3,6 +3,7 @@ import BrandName from "../components/brandname"
 import ParagraphArrow from "../components/paragrapharrow"
 import HomeParticles from "../components/particles"
 import Link from "next/link";
+import { motion } from "framer-motion"
 
 export default function Home() {
   return (
@@ -11,10 +12,10 @@ export default function Home() {
 
       <section className="home1">
         <BrandName />
-        <div className="home1__footer">
-          <p>CREATIVE DIGITAL SERVICES</p>
-          <p>CONTACT</p>
-        </div>
+        <motion.div className="home1__footer">
+          <motion.p>CREATIVE DIGITAL SERVICES</motion.p>
+          <motion.p>CONTACT</motion.p>
+        </motion.div>
       </section>
 
       <section className="home2">
