@@ -18,7 +18,8 @@
             .nav-logo-path {
                 stroke-dasharray: 1190;
                 stroke-dashoffset: 1000;
-                animation: drawNavLogo .8s linear forwards;
+                animation: drawNavLogo 1.2s linear forwards;
+                
               }
 
               @keyframes drawNavLogo {

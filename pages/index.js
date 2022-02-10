@@ -8,7 +8,6 @@ export default function Home() {
   return (
     <>
       <Navbar />
-
       <section className="home1">
         <BrandName />
         <div className="home1__footer">
