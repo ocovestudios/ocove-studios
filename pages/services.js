@@ -2,9 +2,8 @@ import HeaderArrow from "../components/headerarrow";
 import Navbar from "../components/navbar";
 import { motion } from "framer-motion";
 import ContactForm from "../components/contactform";
-import { Suspense, useEffect } from "react";
+import { Suspense } from "react";
 import { Canvas } from "@react-three/fiber";
-import dynamic from "next/dynamic";
 import WebIcon from '../components/webIcon';
 import Icon3D from '../components/3dIcon';
 import LogoIcon from '../components/logoIcon'
