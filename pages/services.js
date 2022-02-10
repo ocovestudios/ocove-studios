@@ -2,11 +2,12 @@ import HeaderArrow from "../components/headerarrow";
 import Navbar from "../components/navbar";
 import { motion } from "framer-motion";
 import ContactForm from "../components/contactform";
+import { Suspense, useEffect } from "react";
+import { Canvas } from "@react-three/fiber";
+import dynamic from "next/dynamic";
 import WebIcon from '../components/webIcon';
 import Icon3D from '../components/3dIcon';
-import LogoIcon from '../components/logoIcon';
-import { Suspense } from "react";
-import { Canvas } from "@react-three/fiber";
+import LogoIcon from '../components/logoIcon'
 
 const Services = () => {
 
@@ -23,7 +24,7 @@ const Services = () => {
                         <div className="services--asset-container">
                             <div className="services--asset">
                                 <Canvas >
-                                    <Suspense fallback={<h2>Not working</h2>}>
+                                    <Suspense fallback={null}>
                                         <pointLight position={[20, 20, 10]} />
                                         <pointLight position={[-20, -20, 10]} />
                                         <WebIcon />
@@ -41,7 +42,7 @@ const Services = () => {
                         <div className="services--asset-container services--asset-container-2">
                             <div className="services--asset">
                                 <Canvas >
-                                    <Suspense fallback={<h2>Not working</h2>}>
+                                    <Suspense fallback={null}>
                                         <pointLight position={[20, 20, 10]} />
                                         <pointLight position={[-20, -20, 10]} />
                                         <pointLight position={[-20, -20, 30]} />
