@@ -7,12 +7,12 @@ import { motion } from "framer-motion"
 
 export default function Home() {
 
-  const navParentVariants = {
+  const footerParentVariants = {
     initial: { opacity: 0 },
     animate: { opacity: 1, transition: { when: "beforeChildren", staggerChildren: 0.2 } }
   }
 
-  const navIconVariants = {
+  const footerElemVariants = {
     initial: { opacity: 0, y: 40 },
     animate: { opacity: 1, y: 0 }
   }
@@ -46,9 +46,9 @@ export default function Home() {
     <>
       <section className="home1">
         <BrandName />
-        <motion.div className="home1__footer" variants={navParentVariants} initial="initial" animate="animate">
-          <motion.p variants={navIconVariants}>CREATIVE DIGITAL SERVICES</motion.p>
-          <motion.p variants={navIconVariants}>CONTACT</motion.p>
+        <motion.div className="home1__footer" variants={footerParentVariants} initial="initial" animate="animate">
+          <motion.p variants={footerElemVariants}>CREATIVE DIGITAL SERVICES</motion.p>
+          <motion.p variants={footerElemVariants}>CONTACT</motion.p>
         </motion.div>
       </section>
 
@@ -85,6 +85,7 @@ export default function Home() {
           <Link href='/projects'><motion.button className="view-projects-button" variants={info2RightVariants}> SEE OUR WORK </motion.button></Link>
         </motion.div>
       </section>
+      
     </>
   )
 }
