@@ -43,9 +43,7 @@ export default function Home() {
   }
 
   return (
-    <div>
-      <Navbar />
-
+    <>
       <section className="home1">
         <BrandName />
         <motion.div className="home1__footer" variants={footerParentVariants} initial="initial" animate="animate">
@@ -88,6 +86,6 @@ export default function Home() {
         </motion.div>
       </section>
       
-    </div>
+    </>
   )
 }
