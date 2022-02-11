@@ -33,10 +33,10 @@ const Services = () => {
                             </div>
 
                         </div>
-                        <div>
+                        <motion.div>
                             <h3 className="services--asset-title">WEB DEVELOPMENT</h3>
                             <p className="services--content-text content__text-focus">We specialise in modern web development and creative design.</p><p className="services--content-text"> We like to work with code. Whatever the project we develop an approach to meet your requirements and digital vision, combining cutting-edge web technologies with creative design practices to make you stand out.</p><p className="services--content-text"> Each step is calculated. We work together at each stage of the design process, through wireframing all the way to production, carefully moulding a design that fits your digital scope. We believe collaboration brings the best results. </p>
-                        </div>
+                        </motion.div>
                     </div >
                     <div className="services--content">
                         <div className="services--asset-container services--asset-container-2">
