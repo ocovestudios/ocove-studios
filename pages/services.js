@@ -35,7 +35,7 @@ const Services = () => {
                         </div>
                         <div>
                             <h3 className="services--asset-title">WEB DEVELOPMENT</h3>
-                            <p className="services--content-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu auctor nisi. Suspendisse potenti. Nulla consequat magna in nisl euismod, sed mollis velit bibendum. Aliquam in nulla lorem. </p>
+                            <p className="services--content-text content__text-focus">We specialise in modern web development and creative design.</p><p className="services--content-text"> We like to work with code. Whatever the project we develop an approach to meet your requirements and digital vision, combining cutting-edge web technologies with creative design practices to make you stand out.</p><p className="services--content-text"> Each step is calculated. We work together at each stage of the design process, through wireframing all the way to production, carefully moulding a design that fits your digital scope. We believe collaboration brings the best results. </p>
                         </div>
                     </div >
                     <div className="services--content">
@@ -55,7 +55,7 @@ const Services = () => {
                         </div>
                         <div>
                             <h3 className="services--asset-title asset__title-2">3D DESIGN</h3>
-                            <p className="services--content-text content__text-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu auctor nisi. Suspendisse potenti. Nulla consequat magna in nisl euismod, sed mollis velit bibendum. Aliquam in nulla lorem. </p>
+                            <p className="services--content-text content__text-2 content__text-focus">Three dimensional modelling and asset creation.</p><p className="services--content-text content__text-2"> We make assets in house, whether it is for the web or a stand alone project we work with technologies within 3D design to create bespoke assets tailored to the project at hand.  </p>
                         </div>
                     </div>
                     <div className="services--content">
@@ -76,7 +76,7 @@ const Services = () => {
                         </div>
                         <div>
                             <h3 className="services--asset-title">VISUAL IDENTITY</h3>
-                            <p className="services--content-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu auctor nisi. Suspendisse potenti. Nulla consequat magna in nisl euismod, sed mollis velit bibendum. Aliquam in nulla lorem. </p>
+                            <p className="services--content-text content__text-focus">Crafting digital identities rooted in visual spaces.</p><p className="services--content-text">Working closely with businesses and artists to grow their visual recognition and develop a visual connection between your work and audience.</p><p className="services--content-text">We carefully consider your digital needs and combine a complete approach along with our other services.</p>
                         </div>
                     </div>
                 </motion.div >
