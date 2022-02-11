@@ -1,4 +1,3 @@
-import Navbar from "../components/navbar";
 import BrandName from "../components/brandname"
 import ParagraphArrow from "../components/paragrapharrow"
 import HomeParticles from "../components/particles"
