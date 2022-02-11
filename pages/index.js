@@ -7,16 +7,6 @@ import { motion } from "framer-motion"
 
 export default function Home() {
 
-  const navParentVariants = {
-    initial: { opacity: 0 },
-    animate: { opacity: 1, transition: { when: "beforeChildren", staggerChildren: 0.2 } }
-  }
-
-  const navIconVariants = {
-    initial: { opacity: 0, y: 40 },
-    animate: { opacity: 1, y: 0 }
-  }
-
   const info1ParentVariants = {
     initial: { opacity: 0 },
     animate: { opacity: 1, transition: { when: "beforeChildren", staggerChildren: 0.1 } }
