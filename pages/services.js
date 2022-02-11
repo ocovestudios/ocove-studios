@@ -12,7 +12,6 @@ const Services = () => {
 
     return (
         <>
-            <Navbar />
             <div className="services--container">
                 <div className="services--header-container">
                     <motion.h2 className="services--header-title" initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 1, delay: 0.5 }} >What we do</motion.h2>
