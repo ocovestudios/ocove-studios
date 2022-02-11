@@ -44,6 +44,7 @@ export default function Home() {
 
   return (
     <>
+      <Navbar />
       <section className="home1">
         <BrandName />
         <motion.div className="home1__footer" variants={navParentVariants} initial="initial" animate="animate">
