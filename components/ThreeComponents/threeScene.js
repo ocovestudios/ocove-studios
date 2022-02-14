@@ -2,7 +2,7 @@ import { World } from './World/World';
 
 function threeScene(container) {
   const world = new World(container);
-  world.render();
+  world.start();
 }
 
 export { threeScene };
