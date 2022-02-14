@@ -11,6 +11,7 @@ import { createSphere } from "./components/createSphere"
 import { Loop } from "./systems/Loop";
 import {Perlin} from "./textures/three-noise.module"
 import { Vector3 } from "three";
+import { DirectionalLightHelper } from "three";
 
 let camera;
 let scene;
@@ -29,23 +30,25 @@ class World {
         const perlin = new Perlin(Math.random())
         const plane = createPlane(scene, camera, renderer)
         const spotLight = createSpotLight();
+        const spotLight2 = createSpotLight();
         const sphere = createSphere(renderer, scene, camera);
         loop = new Loop(camera, scene, renderer)
 
         loop.updateables.push(plane);
 
         const setLightPosition = (obj, multiplier) => {
-            obj.position.x = - 5 + window.scrollY / multiplier;
-            obj.position.y = window.scrollY / multiplier / 100;
+            obj.position.x = -1;
+            obj.position.y = 0;
+            obj.position.z = 8 - window.scrollY / multiplier;
         };
 
-        const setSpherePosition = (obj, multiplier) => {
-            obj.rotation.y = window.scrollY / multiplier;
+        const setYRotation = (obj, multiplier) => {
+            obj.rotation.y = - window.scrollY / multiplier;
         };
 
         const scrollFunctions = [
-            function() { setSpherePosition(sphere, 1000) }, 
-            function() { setLightPosition(spotLight, 50) },
+            function() { setYRotation(plane, 1500) }, 
+            function() { setLightPosition(spotLight, 700) },
         ]
 
         const lightScroller = new Scroller(scrollFunctions);
@@ -70,8 +73,8 @@ class World {
     
         plane.tick = () => {
             updateVertices(plane)
-            t += 0.02;
-            location += 0.01;
+            t += 0.005;
+            location += 0.005;
         }
         scene.add(spotLight, plane);
 
