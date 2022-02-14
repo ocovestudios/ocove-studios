@@ -23,21 +23,9 @@ class World {
         resizer = new Resizer(container, camera, renderer)
         container.append(renderer.domElement);
 
-        const spheres = createSpheresArray()
-        const plane = createPlane()
+        const plane = createPlane(scene, camera, renderer)
         const spotLight = createSpotLight();
         const sphere = createSphere(renderer, scene, camera);
-        const directionalLight = createDirectionalLight();
-
-        const texture = new TextureLoader()
-        .load('../textures/bump.png', 
-            function() {
-                renderer.render(scene, camera); 
-                console.log(plane.material)
-            }
-        )
-        
-        plane.material.bumpMap = texture;
 
         const setLightPosition = (obj, multiplier) => {
             obj.position.x = - 5 + window.scrollY / multiplier;
@@ -50,7 +38,8 @@ class World {
 
         const scrollFunctions = [
             function() { setSpherePosition(sphere, 1000) }, 
-            function() { setLightPosition(spotLight, 50) }
+            function() { setLightPosition(spotLight, 50) },
+            function() {updateVertices(plane)}
         ]
 
         const lightScroller = new Scroller(scrollFunctions);
@@ -61,8 +50,18 @@ class World {
             this.render();
         }
 
-        scene.add(spotLight, plane, sphere);
+        function updateVertices(geo) {
+            let vertices = geo.geometry.attributes.position.array;
+            geo.geometry.attributes.position.needsUpdate = true;
+            for (let i = 0; i <= vertices.length; i+=3) {
+                vertices[i+2] = Math.random()*5;
+            }
+            console.log(vertices)
+        }
 
+        updateVertices(plane)
+
+        scene.add(spotLight, plane);
 
         resizer.onResize = () => {
             this.render();

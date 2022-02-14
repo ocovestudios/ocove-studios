@@ -1,5 +1,5 @@
 import { useEffect, useRef } from "react";
-import { threeScene } from "./ThreeComponents/threeScene";
+import { threeScene } from "../components/ThreeComponents/threeScene";
 
 const ThreeBackground = (props) => {
     const threeContainer = useRef()
