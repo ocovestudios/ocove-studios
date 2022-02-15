@@ -27,6 +27,7 @@ class World {
         const plane = createPlane()
         const spotLight = createSpotLight();
         const directionalLight = createDirectionalLight()
+        directionalLight.position.set(1,0,-1)
 
         const scrollFunctions = [
             function() { setYRotation(plane, 1500) }, 
