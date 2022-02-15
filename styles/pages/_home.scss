@@ -6,6 +6,7 @@ section {
     height: fit-content;
     width: fit-content;
     margin: 6% 5%;
+    z-index: 1;
 }
 
 .home1, .home2, .home3 {
@@ -69,4 +70,12 @@ section {
             cursor: pointer;
         }
     }
+}
+
+.three-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
 }

@@ -9,8 +9,9 @@ const createSpotLight = () => {
 }
 
 const createDirectionalLight = () => {
-    const light1 = new DirectionalLight('white', 2);
-    return light1
+    const light = new DirectionalLight('white', 2);
+    light.position.set(-10,0,5)
+    return light
 }
 
 const createAmbientLight = () => {

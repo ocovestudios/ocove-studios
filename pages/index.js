@@ -3,6 +3,8 @@ import ParagraphArrow from "../components/paragrapharrow"
 import HomeParticles from "../components/particles"
 import Link from "next/link";
 import { motion } from "framer-motion"
+import { useEffect, useRef } from "react";
+import { threeScene } from "../components/ThreeComponents/threeScene";
 
 export default function Home() {
 
@@ -41,9 +43,16 @@ export default function Home() {
     animate: { opacity: 1, x: 0 }
   }
 
+  const threeContainer = useRef()
+
+    useEffect(() => {
+        threeScene(threeContainer.current)
+    }, []);
+
   return (
     <>
       <section className="home1">
+        <div className="three-background" ref={e => threeContainer.current = e}></div>
         <BrandName />
         <motion.div className="home1__footer" variants={footerParentVariants} initial="initial" animate="animate">
           <motion.p variants={footerElemVariants}>CREATIVE DIGITAL SERVICES</motion.p>
