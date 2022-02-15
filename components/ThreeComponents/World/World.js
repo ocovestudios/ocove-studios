@@ -46,7 +46,7 @@ class World {
         let location = 0;
     
         plane.tick = () => {
-            t += 0.0005;
+            t += 0.005;
             location += 0.005;
             updateVertices(plane, location, t)
         }
