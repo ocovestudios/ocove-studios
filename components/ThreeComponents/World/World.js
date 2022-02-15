@@ -1,7 +1,7 @@
 import { createScene } from "./components/createScene";
 import { createRenderer } from './systems/createRenderer';
 import { createCamera } from "./components/createCamera";
-import { createSpotLight, createDirectionalLight } from './components/createLights';
+import { createSpotLight, createDirectionalLight, createAmbientLight } from './components/createLights';
 import { Resizer } from './systems/Resizer'
 import { createSpheresArray } from "./components/createSpheresArray";
 import { Scroller } from "./systems/Scroller";
@@ -31,7 +31,9 @@ class World {
         const plane = createPlane(scene, camera, renderer)
         const spotLight = createSpotLight();
         const spotLight2 = createSpotLight();
+        const directionalLight = createDirectionalLight()
         const sphere = createSphere(renderer, scene, camera);
+        const ambientLight = createAmbientLight()
         loop = new Loop(camera, scene, renderer)
 
         loop.updateables.push(plane);
@@ -43,7 +45,7 @@ class World {
         };
 
         const setYRotation = (obj, multiplier) => {
-            obj.rotation.y = - window.scrollY / multiplier;
+            obj.rotation.y = - .5 - (window.scrollY / multiplier);
         };
 
         const scrollFunctions = [
@@ -62,21 +64,30 @@ class World {
         function updateVertices(geo) {
             let vertices = geo.geometry.attributes.position.array;
             geo.geometry.attributes.position.needsUpdate = true;
+            geo.geometry.computeVertexNormals();
             for (let i = 0; i <= vertices.length; i+=3) {
-                const vector = new Vector3(vertices[i] * 2 + location, vertices[i+1] * 2, t);
-                vertices[i+2] = perlin.get3(vector);
+                const vector = new Vector3(vertices[i] * 1 + location, vertices[i+1] * 1, t);
+                vertices[i+2] = (perlin.get3(vector) / 2);
             }
         }
 
+        plane.position.x = 1;
+        directionalLight.position.x = -10
+        directionalLight.position.y = 0
+        directionalLight.position.z = 5
+        directionalLight.rotation.y = Math.PI;
+
         let t = 0;
         let location = 0;
+        let t2 = 0;
     
         plane.tick = () => {
             updateVertices(plane)
             t += 0.005;
+            t2 += 0.0005
             location += 0.005;
         }
-        scene.add(spotLight, plane);
+        scene.add(plane, spotLight, directionalLight);
 
         resizer.onResize = () => {
             this.render();
