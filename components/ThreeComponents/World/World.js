@@ -66,6 +66,10 @@ class World {
     start() {
         loop.start();
     }
+
+    stop() {
+        loop.stop()
+    }
     
 }
 

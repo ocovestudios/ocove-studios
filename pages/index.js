@@ -4,9 +4,9 @@ import HomeParticles from "../components/particles"
 import Link from "next/link";
 import { motion } from "framer-motion"
 import { useEffect, useRef } from "react";
-import { threeScene } from "../components/ThreeComponents/threeScene";
+import { ThreeScene, threeScene } from "../components/ThreeComponents/threeScene";
 
-export default function Home() {
+export default function Home(props) {
 
   const footerParentVariants = {
     initial: { opacity: 0 },
@@ -43,10 +43,15 @@ export default function Home() {
     animate: { opacity: 1, x: 0 }
   }
 
-  const threeContainer = useRef()
+  const threeContainer = useRef();
+  const initialLoad = props.initialLoad;
 
     useEffect(() => {
-        threeScene(threeContainer.current)
+      const threeScene = new ThreeScene(threeContainer.current);
+      threeScene.start()
+      return () => {
+        threeScene.stop()
+      };
     }, []);
 
   return (
