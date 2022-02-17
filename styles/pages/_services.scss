@@ -21,7 +21,7 @@
 
         @media (min-width: 850px) {
             .services--header-title {
-                font-size: 2.3rem;
+                font-size: 2rem;
                 margin-right: 2rem;
                 width: auto;
                 margin-left: 10%;
@@ -92,6 +92,7 @@
                     width: 30vw;
                     height: 30vw;
                     overflow: visible;
+                    margin-left: 10%;
                 } 
             }
 
@@ -119,56 +120,69 @@
     @media (min-width: 850px) {
         .services--content-container {
             width: 75%;
-            margin-top: 1em;
+            margin-top: 2em;
             overflow: visible;
             margin-bottom: 6em;
 
             .services--content {
                 flex-direction: row;
-                margin-bottom: 1em;
+                margin-bottom: 7em;
                 min-height: 30vh;
                 overflow: visible;
                 align-items: center;
-                margin-top: 4em;
+
 
                 .services--asset-container {
                     display: flex;
                     align-items: center;
-                    justify-content: center;
                     overflow: visible;
                     position: relative;
+                    width: 25%;
 
                     .services--asset {
                         width: 20vw;
-                        height: 30vw;
+                        height: 20vw;
                         overflow: visible;
+                        margin: 0;
+                        margin-top: 1em;
                     } 
                 }
 
                 .services--asset-title {
-                    font-size: 1.2rem;
+                    font-size: 1.4rem;
                     text-align: left;
-                    margin-left: 10%;
                     margin-top: 1em;
+                    font-family: sitrus;
+                    font-weight: 400;
+                    text-align: left;
+                    border-left: 1px solid $main-color;
+                    padding-left: 1em;
+                    margin: 0;
+                }
+
+                .services--asset-2 {
+                    padding-right: 2em;
                 }
 
                 .services--asset-container-2 {
                     position: absolute;
-                    right: 12.5%;
+                    right: 7.5%;
                     z-index: -1;
                 }
 
                 .services--content-text {
-                    width: 80%;
+                    width: 85%;
                     margin-left: 10%;
                     text-align: left;
                     font-size: 1.1rem;
                     line-height: 1.4;
+                    float: right;
+                    margin-top: 2em;
                 }
 
                 .content__text-focus {
                     font-style: italic;
-                    font-size: 1.8rem;
+                    font-size: 1.7rem;
 
                     span {
                         font-style: normal;
@@ -177,12 +191,18 @@
 
                 .content__text-2 {
                     margin-right: 25vw;
-                    margin-left: 7.5%;
-                    width: 60%;
+                    margin-left: 0%;
+                    width: 70%;
+                    float: left;
                 }
 
                 .asset__title-2 {
-                    margin-left: 7.5%
+                    text-align: center;
+                    border-left: none;
+                    border-right: 1px solid $main-color;
+                    padding-left: 0;
+                    padding-right: 1em;
+                    margin: 0;
                 }
             }            
         }   
@@ -383,6 +403,7 @@
 
 @media (min-width: 850px) {
     .services--container {
-        margin-top: 7em;
+        margin-top: 6em;
+        width: 100%;
     } 
 }
