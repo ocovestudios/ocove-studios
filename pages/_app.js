@@ -1,22 +1,19 @@
 import '../styles/main.scss';
 import { AnimatePresence } from 'framer-motion';
 import Navbar from '../components/navbar';
-import { useState, useEffect } from 'react';
+import { useRouter } from 'next/router';
 
 function MyApp({ Component, pageProps }) {
 
-  const [initialLoad, setInitialLoad] = useState(0);
-
-  useEffect(() => {
-    setInitialLoad(1)
-    console.log(initialLoad)
-  }, [initialLoad]);
+  const router = useRouter()
 
   return (
-    <AnimatePresence exitBeforeEnter>
+    <>
       <Navbar />
-      <Component {...pageProps} initialLoad={initialLoad} />
-    </AnimatePresence>
+      <AnimatePresence exitBeforeEnter>
+        <Component {...pageProps} key={router.pathname} />
+      </AnimatePresence>
+    </>
   )
 }
 

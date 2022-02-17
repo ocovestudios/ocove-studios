@@ -6,7 +6,7 @@ import { motion } from "framer-motion"
 import { useEffect, useRef } from "react";
 import { ThreeScene, threeScene } from "../components/ThreeComponents/threeScene";
 
-export default function Home(props) {
+export default function Home() {
 
   const footerParentVariants = {
     initial: { opacity: 0 },
@@ -44,7 +44,6 @@ export default function Home(props) {
   }
 
   const threeContainer = useRef();
-  const initialLoad = props.initialLoad;
 
     useEffect(() => {
       const threeScene = new ThreeScene(threeContainer.current);

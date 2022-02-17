@@ -1,8 +1,38 @@
-.projects--container {
-    .projects--list {
-        list-style-type: none;
+.projects__container {
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 6.5em;
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: 1fr 1fr;
+    row-gap: 12vh;
+    justify-content: space-between;
+    margin-bottom: 12vh;
 
-        .projects--links {
+    .projects__tile {
+        height: auto;
+        width: auto;
+
+        .tile__image-container {
+            border-radius: 5px;
+            width: 23vw;
+            height: 25vh;
+            position: relative;
+            overflow: hidden;
+            transition: 0.8s;
+            border: 1px solid black;
+
+            &:hover {
+                cursor: pointer;
+                opacity: 0.7;
+            }
+        }
+
+        .tile__title {
+            margin-top: 0.5em;
+            font-size: 1.2rem;
+            width: fit-content;
+
             &:hover {
                 cursor: pointer;
             }

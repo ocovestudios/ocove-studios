@@ -17,7 +17,7 @@ const Services = () => {
                     <motion.h2 className="services--header-title" initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 1, delay: 0.5 }} >What we do</motion.h2>
                     <HeaderArrow />
                 </div>
-                <motion.div className="services--content-container" initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 2, duration: 1 }}>
+                <motion.div className="services--content-container" initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 1, duration: 1 }}>
                     <div className="services--content">
                         <div className="services--asset-container">
                             <div className="services--asset">

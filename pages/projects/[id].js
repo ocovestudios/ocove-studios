@@ -1,12 +1,14 @@
 import Navbar from "../../components/navbar";
 import { projectData } from "../../projectsData";
 import Link from "next/link";
+import { useRouter } from "next/router";
 
 const Project = ({ projectData }) => {
+
     return (
-        <>
-            <Navbar />
-        </>
+        <div>
+            <h2 style={{ marginTop: '6em', marginLeft: '4em' }}>{projectData.title}</h2>
+        </div>
 
     );
 }
