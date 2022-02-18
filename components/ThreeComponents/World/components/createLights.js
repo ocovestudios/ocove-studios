@@ -9,12 +9,12 @@ const createSpotLight = () => {
 }
 
 const createDirectionalLight = () => {
-    const light = new DirectionalLight('white', 2.5);
+    const light = new DirectionalLight('white', 3);
     return light;
 }
 
 const createAmbientLight = () => {
-    const light = new AmbientLight('#A6C1FF')
+    const light = new AmbientLight('#24354f')
     return light
 }
 
