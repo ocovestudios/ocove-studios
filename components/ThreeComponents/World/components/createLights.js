@@ -14,7 +14,7 @@ const createDirectionalLight = () => {
 }
 
 const createAmbientLight = () => {
-    const light = new AmbientLight('#B1D4F1')
+    const light = new AmbientLight('#A6C1FF')
     return light
 }
 
