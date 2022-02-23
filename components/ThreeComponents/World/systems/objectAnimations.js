@@ -8,4 +8,8 @@ const setYRotation = (obj, multiplier) => {
     obj.rotation.y = -1.9 + (window.scrollY / multiplier);
 };
 
-export { setLightPosition, setYRotation }
+const setContainerOpacity = (obj, multiplier) => {
+    obj.style.opacity = 2 - (window.scrollY / multiplier);
+}
+
+export { setLightPosition, setYRotation, setContainerOpacity }

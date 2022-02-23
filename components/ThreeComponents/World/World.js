@@ -6,7 +6,7 @@ import { Resizer } from './systems/Resizer'
 import { Scroller } from "./systems/Scroller";
 import { createPlane } from "./components/createPlane";
 import { Loop } from "./systems/Loop";
-import { setLightPosition, setYRotation } from "./systems/objectAnimations"
+import { setLightPosition, setYRotation, setContainerOpacity } from "./systems/objectAnimations"
 import { updateVertices } from "./systems/noiseVertexDisplacement"
 
 let camera;
@@ -35,7 +35,8 @@ class World {
 
 
         const scrollFunctions = [
-            function() { setYRotation(plane, 1000) }, 
+            function() { setYRotation(plane, 2000) }, 
+            function() { setContainerOpacity(container, 500) }
         ]
         const lightScroller = new Scroller(scrollFunctions);
 
@@ -50,9 +51,9 @@ class World {
         let t = 0;
         let location = 0;
     
-        plane.tick = () => {
-            t += 0.005;
-            location += 0.005;
+        plane.tick = (delta) => {
+            t += 0.125 * delta;
+            location += 0.125 * delta;
             updateVertices(plane, location, t)
         }
 
