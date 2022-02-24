@@ -105,6 +105,7 @@
                 margin-bottom: 2rem;
                 text-align: center;
                 letter-spacing: 1px;
+                font-weight: 100;
             }
 
             .services--content-text {
@@ -119,22 +120,29 @@
 
     @media (min-width: 850px) {
         .services--content-container {
-            width: 75%;
+            width: 70%;
             margin-top: 2em;
             overflow: visible;
             margin-bottom: 6em;
 
             .services--content {
                 flex-direction: row;
-                margin-bottom: 7em;
-                min-height: 30vh;
+                padding-bottom: 7em;
+                min-height: 65vh;
                 overflow: visible;
                 align-items: center;
+                border-bottom: 1px solid $main-color;
+
+                .content__text {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-end;
+                }
 
 
                 .services--asset-container {
                     display: flex;
-                    align-items: center;
+                    align-items: flex-start;
                     overflow: visible;
                     position: relative;
                     width: 25%;
@@ -153,7 +161,7 @@
                     text-align: left;
                     margin-top: 1em;
                     font-family: $main-font;
-                    font-weight: 400;
+                    font-weight: 100;
                     text-align: left;
                     border-left: 1px solid $main-color;
                     padding-left: 1em;
@@ -161,18 +169,19 @@
                 }
 
                 .services--asset-2 {
-                    padding-right: 2em;
+                    padding-right: -5%;
                 }
 
                 .services--asset-container-2 {
                     position: absolute;
                     right: 7.5%;
                     z-index: -1;
+                    align-items: center;
                 }
 
                 .services--content-text {
-                    width: 85%;
-                    margin-left: 10%;
+                    width: 90%;
+                    margin-left: 20%;
                     text-align: left;
                     font-size: 1.1rem;
                     line-height: 1.4;
@@ -190,10 +199,9 @@
                 }
 
                 .content__text-2 {
-                    margin-right: 25vw;
-                    margin-left: 0%;
-                    width: 70%;
-                    float: left;
+                    margin-right: 35vw;
+                    width: 55vw;
+                    text-align: left;
                 }
 
                 .asset__title-2 {
