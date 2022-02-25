@@ -21,8 +21,39 @@ section {
     bottom: 0px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     padding: 3% 5%;
     font-size: calc($nav-fs + 1px);
+
+    .footer__contact-button-wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .footer__reveal-contact-button {
+        background-color: transparent;
+        border: none;
+        font-size: 38px;
+        cursor: pointer;
+        padding: 5px;
+    }
+
+    .footer__contact-button {
+        margin: 0 25px 0 0;
+        
+        //animated
+        display: none;
+    }
+
+    a {
+        text-decoration: none;
+        color: $main-color;
+
+        &:hover {
+            color: #535353;
+        }
+    }
 }
 
 .home2, .home3 {
