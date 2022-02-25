@@ -14,26 +14,22 @@ const Services = () => {
         <>
             <div className="services--container">
                 <div className="services--header-container">
-                    <motion.h2 className="services--header-title" initial={{ y: -200 }} animate={{ y: 0 }} transition={{ delay: 0.7 }}>What we do</motion.h2>
+                    <motion.h2 className="services--header-title" initial={{ opacity: 0, y: 40 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.4 }}>What we do</motion.h2>
                     <HeaderArrow />
                 </div>
-                <motion.div className="services--content-container" initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 1.2, duration: 1 }}>
-
+                <motion.div className="services--content-container" initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.4, duration: 1 }}>
                     <div className="services--content">
                         <div className="services--asset-container">
                             <div className="services--asset">
                                 <Canvas >
-                                    <Suspense fallback={null}>
-                                        <pointLight position={[20, 20, 10]} />
-                                        <pointLight position={[-20, -20, 10]} />
-                                        <WebIcon />
-                                    </Suspense>
+                                    <pointLight position={[20, 20, 10]} />
+                                    <pointLight position={[-20, -20, 10]} />
+                                    <Suspense fallback={null}><WebIcon /></Suspense>
                                 </Canvas>
                             </div>
                             <motion.h3 className="services--asset-title" >WEB DEVELOPMENT</motion.h3>
                         </div>
-                        <motion.div>
-
+                        <motion.div className='content__text'>
                             <p className="services--content-text content__text-focus">We specialise in modern web development and creative design.</p><p className="services--content-text"> We like to work with code. Whatever the project we develop an approach to meet your requirements and digital vision, combining cutting-edge web technologies with creative design practices to make you stand out.</p><p className="services--content-text"> Each step is calculated. We work together at each stage of the design process, through wireframing all the way to production, carefully moulding a design that fits your digital scope. We believe collaboration brings the best results. </p>
                         </motion.div>
                     </div >
@@ -41,19 +37,16 @@ const Services = () => {
                         <div className="services--asset-container services--asset-container-2">
                             <div className="services--asset services--asset-2">
                                 <Canvas >
-                                    <Suspense fallback={null}>
-                                        <pointLight position={[20, 20, 10]} />
-                                        <pointLight position={[-20, -20, 10]} />
-                                        <pointLight position={[-20, -20, 30]} />
-                                        <pointLight position={[-20, -20, -30]} />
-                                        <Icon3D />
-                                    </Suspense>
+                                    <pointLight position={[20, 20, 10]} />
+                                    <pointLight position={[-20, -20, 10]} />
+                                    <pointLight position={[-20, -20, 30]} />
+                                    <pointLight position={[-20, -20, -30]} />
+                                    <Suspense fallback={null}><Icon3D /></Suspense>
                                 </Canvas>
                             </div>
                             <motion.h3 className="services--asset-title asset__title-2" >3D DESIGN</motion.h3>
                         </div>
-                        <div>
-
+                        <div className="content__text">
                             <p className="services--content-text content__text-2 content__text-focus">Three dimensional modelling and asset creation.</p><p className="services--content-text content__text-2"> We make assets in house, whether it is for the web or a stand alone project we work with technologies within 3D design to create bespoke assets tailored to the project at hand.  </p>
                         </div>
                     </div>
@@ -61,20 +54,17 @@ const Services = () => {
                         <div className="services--asset-container">
                             <div className="services--asset">
                                 <Canvas >
-                                    <Suspense fallback={null}>
-                                        <pointLight position={[20, 20, 10]} />
-                                        <pointLight position={[10, 10, 5]} />
-                                        <pointLight position={[-20, -20, 10]} />
-                                        <pointLight position={[-20, -20, 30]} />
-                                        <pointLight position={[-20, -20, -30]} />
-                                        <LogoIcon />
-                                    </Suspense>
+                                    <pointLight position={[20, 20, 10]} />
+                                    <pointLight position={[10, 10, 5]} />
+                                    <pointLight position={[-20, -20, 10]} />
+                                    <pointLight position={[-20, -20, 30]} />
+                                    <pointLight position={[-20, -20, -30]} />
+                                    <Suspense fallback={null}><LogoIcon /></Suspense>
                                 </Canvas>
                             </div>
                             <motion.h3 className="services--asset-title" >VISUAL IDENTITY</motion.h3>
                         </div>
-                        <div>
-
+                        <div className="content__text">
                             <p className="services--content-text content__text-focus">Crafting digital identities rooted in visual spaces.</p><p className="services--content-text">Working closely with businesses and artists to grow their visual recognition and develop a visual connection between your work and audience.</p><p className="services--content-text">We carefully consider your digital needs and combine a complete approach along with our other services.</p>
                         </div>
                     </div>
