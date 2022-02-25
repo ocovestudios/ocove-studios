@@ -8,14 +8,10 @@ import { motion, useAnimation } from "framer-motion"
 export default function Home() {
 
   const footerParentVariants = {
-    initial: { opacity: 0 },
-    animate: { opacity: 1, transition: { when: "beforeChildren", staggerChildren: 0.2 } }
-  }
-
-  const footerElemVariants = {
     initial: { opacity: 0, y: 40 },
     animate: { opacity: 1, y: 0 }
   }
+
 
   const info1ParentVariants = {
     initial: { opacity: 0 },
@@ -46,8 +42,8 @@ export default function Home() {
   const contactButtonControls = useAnimation()
 
   const sequence = async () => {
-    await revealButtonControls.start({ rotate: 180, transition: { duration: .3 } })
-    await contactButtonControls.start({ display: "block", opacity: 1, x: 0, transition: { delay: .05, duration: .3, ease: [0.20, 0.06, 0.04, 0] } })
+    await revealButtonControls.start({ rotate: -180, transition: { duration: .3 } })
+    await contactButtonControls.start({ display: "block", opacity: 1, x: 0, transition: { delay: 0.05, duration: .2, ease: [0.20, 0.06, 0.04, 0] } })
   }
 
   return (
@@ -55,10 +51,10 @@ export default function Home() {
       <section className="home1">
         <BrandName />
         <motion.div className="home1__footer" variants={footerParentVariants} initial="initial" animate="animate">
-          <motion.p variants={footerElemVariants}>CREATIVE DIGITAL SERVICES</motion.p>
+          <motion.p>CREATIVE DIGITAL SERVICES</motion.p>
           <div className="footer__contact-button-wrapper">
             <motion.a className="footer__contact-button" animate={contactButtonControls} initial={{ opacity: 0, x: 27 }} href="mailto:someone@yoursite.com">CONTACT</motion.a>
-            <motion.button className="footer__reveal-contact-button" variants={footerElemVariants} animate={revealButtonControls} onClick={() => sequence()}>+</motion.button>
+            <motion.button className="footer__reveal-contact-button" animate={revealButtonControls} onClick={() => sequence()}>+</motion.button>
           </div>
         </motion.div>
       </section>
