@@ -3,7 +3,7 @@ import BrandName from "../components/brandname"
 import ParagraphArrow from "../components/paragrapharrow"
 import HomeParticles from "../components/particles"
 import Link from "next/link";
-import { motion } from "framer-motion"
+import { motion, useAnimation } from "framer-motion"
 
 export default function Home() {
 
@@ -42,13 +42,24 @@ export default function Home() {
     animate: { opacity: 1, x: 0 }
   }
 
+  const revealButtonControls = useAnimation()
+  const contactButtonControls = useAnimation()
+
+  const sequence = async () => {
+    await revealButtonControls.start({ rotate: 180, transition: { duration: .3 } })
+    await contactButtonControls.start({ display: "block", opacity: 1, x: 0, transition: { delay: .05, duration: .3, ease: [0.20, 0.06, 0.04, 0] } })
+  }
+
   return (
     <>
       <section className="home1">
         <BrandName />
         <motion.div className="home1__footer" variants={footerParentVariants} initial="initial" animate="animate">
           <motion.p variants={footerElemVariants}>CREATIVE DIGITAL SERVICES</motion.p>
-          <motion.p variants={footerElemVariants}>CONTACT</motion.p>
+          <div className="footer__contact-button-wrapper">
+            <motion.a className="footer__contact-button" animate={contactButtonControls} initial={{ opacity: 0, x: 27 }} href="mailto:someone@yoursite.com">CONTACT</motion.a>
+            <motion.button className="footer__reveal-contact-button" variants={footerElemVariants} animate={revealButtonControls} onClick={() => sequence()}>+</motion.button>
+          </div>
         </motion.div>
       </section>
 
@@ -85,7 +96,7 @@ export default function Home() {
           <Link href='/projects'><motion.button className="view-projects-button" variants={info2RightVariants}> SEE OUR WORK </motion.button></Link>
         </motion.div>
       </section>
-      
+
     </>
   )
 }
