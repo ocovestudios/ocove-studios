@@ -73,28 +73,28 @@ export default function Home() {
 
       <section className="home2">
         <div className="info-container">
-          <motion.p className="home2__info" variants={info1ParentVariants} initial="initial" whileInView="animate" viewport={{ once: true }}>
-            <motion.p variants={info1Variants}>
+          <motion.div className="home2__info" variants={info1ParentVariants} initial="initial" whileInView="animate" viewport={{ once: true }}>
+            <motion.div variants={info1Variants}>
               <div className="paragraph-arrow"><ParagraphArrow />
-              </div> We are a UK-based freelance collective </motion.p>
-            <motion.p variants={info1Variants}> specialising in website development, video </motion.p>
-            <motion.p variants={info1Variants}> production and 3D visualisation, providing </motion.p>
-            <motion.p variants={info1Variants}> innovative digital products for creatives, </motion.p>
-            <motion.p variants={info1Variants}> brands and businesses.</motion.p>
-          </motion.p>
+              </div> We are a UK-based freelance collective </motion.div>
+            <motion.div variants={info1Variants}> specialising in website development, video </motion.div>
+            <motion.div variants={info1Variants}> production and 3D visualisation, providing </motion.div>
+            <motion.div variants={info1Variants}> innovative digital products for creatives, </motion.div>
+            <motion.div variants={info1Variants}> brands and businesses.</motion.div>
+          </motion.div>
         </div>
       </section>
 
       <section className="home3">
         <div className="home3__left">
           <div className="info-container">
-            <motion.p variants={info2ParentVariants} initial="initial" whileInView="animate" viewport={{ once: true }}>
-              <motion.p className="home3__info" variants={info2LeftVariants}>
-                Working as a collective allows us to bring our best creative assets to projects.</motion.p>
-              <motion.p className="home3__info" variants={info2LeftVariants}><div className="paragraph-arrow"><ParagraphArrow /></div>
+            <motion.div variants={info2ParentVariants} initial="initial" whileInView="animate" viewport={{ once: true }}>
+              <motion.div className="home3__info" variants={info2LeftVariants}>
+                Working as a collective allows us to bring our best creative assets to projects.</motion.div>
+              <motion.div className="home3__info" variants={info2LeftVariants}><div className="paragraph-arrow"><ParagraphArrow /></div>
                 Collaborating as individuals, we can make things together that we couldn&#39;t alone.
-              </motion.p>
-            </motion.p>
+              </motion.div>
+            </motion.div>
           </div>
         </div>
         <motion.div className="home3__right" variants={info2ParentVariants} initial="initial" whileInView="animate" viewport={{ once: true }}>
