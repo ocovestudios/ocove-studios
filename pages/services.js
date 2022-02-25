@@ -80,7 +80,6 @@ const Services = () => {
                     </div>
                 </motion.div >
                 <div className="services__form-container">
-                    <button className="services__form-button">TALK TO US</button>
                     <ContactForm />
                 </div>
                 <div className="services--header-container services--contact-header">
