@@ -19,7 +19,6 @@
                 stroke-dasharray: 1190;
                 stroke-dashoffset: 1000;
                 animation: drawNavLogo 1.2s linear forwards;
-                
               }
 
               @keyframes drawNavLogo {
@@ -35,8 +34,8 @@
 
     .nav__line {
         width: 60%;
-        height: 1.2px;
-        background-color: #292929;
+        height: 2px;
+        background-color: #313131;
     }
     
     @media (max-width: 500px) {
