@@ -35,10 +35,6 @@
         }
     }
 
-    .services--contact-header {
-        margin-top: 10em;
-    }
-
     @media(min-width: 850px) {
         .services--header-container {
             width: 100%;
@@ -123,7 +119,7 @@
             width: 70%;
             margin-top: 2em;
             overflow: visible;
-            margin-bottom: 6em;
+            margin-bottom: 0;
 
             .services--content {
                 flex-direction: row;
@@ -220,7 +216,11 @@
 
     .services__form-container {
         // width: 100%;
-        height: 12em;
+        height: 20em;
+        margin: 2em 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 
     //Contact Section
@@ -230,7 +230,6 @@
         margin-bottom: 2em;
         position: relative;
         width: 80%;
-        
 
         .contact__list {
             margin-top: 4em;

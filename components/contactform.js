@@ -21,6 +21,7 @@ const ContactForm = () => {
     const formInput1Controls = useAnimation()
     const formInput2Controls = useAnimation()
     const formInput3Controls = useAnimation()
+    const formButtonFade = useAnimation()
 
     const sequence = async () => {
         await buttonControls.start({ opacity: 0, transition: { duration: .27 }, transitionEnd: { display: "none" } })
@@ -31,11 +32,12 @@ const ContactForm = () => {
         await formLine3Controls.start("animate")
         await formInput1Controls.start("animate")
         await formInput2Controls.start("animate")
-        return await formInput3Controls.start("animate")
+        await formInput3Controls.start("animate")
+        return await formButtonFade.start({ opacity: 1 })
     }
 
     return (
-        <>
+        <div className="form__wrapper">
             <motion.div className="form-button__wrap">
                 <motion.button className="form-button" animate={buttonControls} onClick={() => sequence()}>TALK TO US</motion.button>
                 <svg className="form-button__line" width="340" height="75" viewBox="0 0 340 75" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -52,8 +54,9 @@ const ContactForm = () => {
                 </motion.div>
                 <motion.textarea animate={formInput3Controls} initial="initial" variants={inputVariants} type='text' placeholder="MESSAGE" className="contact-form__message" />
                 <motion.div className="horizontal-line" variants={lineVariants} animate={formLine3Controls} initial="initial"></motion.div>
+                <motion.button animate={formButtonFade} initial={{ opacity: 0 }} className='contact__form-submit'>SEND</motion.button>
             </motion.form>
-        </>
+        </div>
     );
 }
 
