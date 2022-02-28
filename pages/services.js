@@ -85,9 +85,10 @@ const Services = () => {
                         <li className="contact__list-item">
                             <p className="contact__name">Billy Myles-Berkouwer</p>
                             <div className="contact__links">
-                                <a className="contact__link"> <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                                    viewBox="0 0 58 58" width="29" height="29" xmlSpace="preserve" fill="#242424">
-                                    <path d="M50.688,48.222C55.232,43.101,58,36.369,58,29c0-7.667-2.996-14.643-7.872-19.834c0,0,0-0.001,0-0.001
+                                <a className="contact__link" href='https://bmbservices.netlify.app/' target="_blank" rel="noopener noreferrer">
+                                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                        viewBox="0 0 58 58" width="29" height="29" xmlSpace="preserve" fill="#242424">
+                                        <path d="M50.688,48.222C55.232,43.101,58,36.369,58,29c0-7.667-2.996-14.643-7.872-19.834c0,0,0-0.001,0-0.001
                                     c-0.004-0.006-0.01-0.008-0.013-0.013c-5.079-5.399-12.195-8.855-20.11-9.126l-0.001-0.001L29.439,0.01C29.293,0.005,29.147,0,29,0
                                     s-0.293,0.005-0.439,0.01l-0.563,0.015l-0.001,0.001c-7.915,0.271-15.031,3.727-20.11,9.126c-0.004,0.005-0.01,0.007-0.013,0.013
                                     c0,0,0,0.001-0.001,0.002C2.996,14.357,0,21.333,0,29c0,7.369,2.768,14.101,7.312,19.222c0.006,0.009,0.006,0.019,0.013,0.028
@@ -111,16 +112,20 @@ const Services = () => {
                                     M9.691,47.846c2.366-1.572,4.885-2.836,7.517-3.781c1.945,4.36,4.737,8.333,8.271,11.698C19.328,54.958,13.823,52.078,9.691,47.846
                                     z M32.521,55.763c3.534-3.364,6.326-7.337,8.271-11.698c2.632,0.945,5.15,2.209,7.517,3.781
                                     C44.177,52.078,38.672,54.958,32.521,55.763z"/>
-                                </svg></a>
-                                <a className="contact__link"><img className="contact__image contact__linkedIn" src='img/linkedin.png' /></a>
+                                    </svg>
+                                </a>
+                                <a className="contact__link" href='https://www.linkedin.com/in/billy-myles-berkouwer-229679222/' target="_blank" rel="noopener noreferrer">
+                                    <img className="contact__image contact__linkedIn" src='img/linkedin.png' />
+                                </a>
                             </div>
                         </li>
                         <li className="contact__list-item">
                             <p className="contact__name">Matt Congdon</p>
                             <div className="contact__links">
-                                <a className="contact__link"> <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                                    viewBox="0 0 58 58" width="29" height="29" xmlSpace="preserve" fill="#242424">
-                                    <path d="M50.688,48.222C55.232,43.101,58,36.369,58,29c0-7.667-2.996-14.643-7.872-19.834c0,0,0-0.001,0-0.001
+                                <a className="contact__link" href="https://mattcongdon.info/" target="_blank" rel="noopener noreferrer">
+                                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                        viewBox="0 0 58 58" width="29" height="29" xmlSpace="preserve" fill="#242424">
+                                        <path d="M50.688,48.222C55.232,43.101,58,36.369,58,29c0-7.667-2.996-14.643-7.872-19.834c0,0,0-0.001,0-0.001
                                     c-0.004-0.006-0.01-0.008-0.013-0.013c-5.079-5.399-12.195-8.855-20.11-9.126l-0.001-0.001L29.439,0.01C29.293,0.005,29.147,0,29,0
                                     s-0.293,0.005-0.439,0.01l-0.563,0.015l-0.001,0.001c-7.915,0.271-15.031,3.727-20.11,9.126c-0.004,0.005-0.01,0.007-0.013,0.013
                                     c0,0,0,0.001-0.001,0.002C2.996,14.357,0,21.333,0,29c0,7.369,2.768,14.101,7.312,19.222c0.006,0.009,0.006,0.019,0.013,0.028
@@ -144,16 +149,20 @@ const Services = () => {
                                     M9.691,47.846c2.366-1.572,4.885-2.836,7.517-3.781c1.945,4.36,4.737,8.333,8.271,11.698C19.328,54.958,13.823,52.078,9.691,47.846
                                     z M32.521,55.763c3.534-3.364,6.326-7.337,8.271-11.698c2.632,0.945,5.15,2.209,7.517,3.781
                                     C44.177,52.078,38.672,54.958,32.521,55.763z"/>
-                                </svg></a>
-                                <a className="contact__link"><img className="contact__image contact__linkedIn" src='img/linkedin.png' /></a>
+                                    </svg>
+                                </a>
+                                <a className="contact__link" href='https://www.linkedin.com/in/mattcong/' target="_blank" rel="noopener noreferrer">
+                                    <img className="contact__image contact__linkedIn" src='img/linkedin.png' />
+                                </a>
                             </div>
                         </li>
                         <li className="contact__list-item">
                             <p className="contact__name">Arran Baker</p>
                             <div className="contact__links">
-                                <a className="contact__link"> <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                                    viewBox="0 0 58 58" width="29" height="29" xmlSpace="preserve" fill="#242424">
-                                    <path d="M50.688,48.222C55.232,43.101,58,36.369,58,29c0-7.667-2.996-14.643-7.872-19.834c0,0,0-0.001,0-0.001
+                                <a className="contact__link" href='https://www.arranbaker.com/' target="_blank" rel="noopener noreferrer">
+                                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                        viewBox="0 0 58 58" width="29" height="29" xmlSpace="preserve" fill="#242424">
+                                        <path d="M50.688,48.222C55.232,43.101,58,36.369,58,29c0-7.667-2.996-14.643-7.872-19.834c0,0,0-0.001,0-0.001
                                     c-0.004-0.006-0.01-0.008-0.013-0.013c-5.079-5.399-12.195-8.855-20.11-9.126l-0.001-0.001L29.439,0.01C29.293,0.005,29.147,0,29,0
                                     s-0.293,0.005-0.439,0.01l-0.563,0.015l-0.001,0.001c-7.915,0.271-15.031,3.727-20.11,9.126c-0.004,0.005-0.01,0.007-0.013,0.013
                                     c0,0,0,0.001-0.001,0.002C2.996,14.357,0,21.333,0,29c0,7.369,2.768,14.101,7.312,19.222c0.006,0.009,0.006,0.019,0.013,0.028
@@ -177,8 +186,11 @@ const Services = () => {
                                     M9.691,47.846c2.366-1.572,4.885-2.836,7.517-3.781c1.945,4.36,4.737,8.333,8.271,11.698C19.328,54.958,13.823,52.078,9.691,47.846
                                     z M32.521,55.763c3.534-3.364,6.326-7.337,8.271-11.698c2.632,0.945,5.15,2.209,7.517,3.781
                                     C44.177,52.078,38.672,54.958,32.521,55.763z"/>
-                                </svg></a>
-                                <a className="contact__link"><img className="contact__image contact__linkedIn" src='img/linkedin.png' /></a>
+                                    </svg>
+                                </a>
+                                <a className="contact__link" href='https://www.linkedin.com/in/arran-baker/' target="_blank" rel="noopener noreferrer">
+                                    <img className="contact__image contact__linkedIn" src='img/linkedin.png' />
+                                </a>
                             </div>
                         </li>
                     </ul>
