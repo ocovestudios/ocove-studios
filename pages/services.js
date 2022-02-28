@@ -1,5 +1,3 @@
-import HeaderArrow from "../components/headerarrow";
-import Navbar from "../components/navbar";
 import { motion } from "framer-motion";
 import ContactForm from "../components/contactform";
 import { Suspense } from "react";
@@ -15,7 +13,10 @@ const Services = () => {
             <div className="services--container">
                 <div className="services--header-container">
                     <motion.h2 className="services--header-title" initial={{ opacity: 0, y: 40 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.4 }}>What we do</motion.h2>
-                    <HeaderArrow />
+                    <svg width="255" height="10" viewBox="0 0 285 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <motion.line y1="-1" x2="276.27" y2="-1" transform="matrix(1 0 0 -1 0 4)" stroke="black" strokeWidth="2" initial={{ x2: 10, opacity: 1 }} animate={{ x2: 276.27, opacity: 1 }} transition={{ duration: 1, ease: 'easeInOut' }} viewport={{ once: true }} />
+                        <motion.rect width="10" height="10" transform="matrix(1 0 0 -1 275 10)" fill="black" initial={{ x: 10, opacity: 1 }} animate={{ x: 276.27, opacity: 1 }} transition={{ duration: 1, ease: 'easeInOut' }} viewport={{ once: true }} />
+                    </svg>
                 </div>
                 <motion.div className="services--content-container" initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.4, duration: 1 }}>
                     <div className="services--content">
