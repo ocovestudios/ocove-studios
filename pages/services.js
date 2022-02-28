@@ -199,7 +199,6 @@ const Services = () => {
                                 transform="translate(-14.42 -33.25)" stroke="rgb(236, 236, 236)" strokeWidth="1.5" fill="none" />
                         </motion.svg>
                     </div>
-                    <img src='img/globe.gif' className="contact__globe" />
                 </div>
 
             </div >

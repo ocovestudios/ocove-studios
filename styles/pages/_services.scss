@@ -1,7 +1,7 @@
 .services--container {
     width: 100%;
     margin: 0 auto;
-    margin-top: 6em;
+    margin-top: 7em;
 
     .services--header-container {
         display: flex;
@@ -11,13 +11,14 @@
 
         .services--header-title {
             font-weight: 400;
-            font-size: 1.3rem;
-            width: 50%;
+            font-size: 1.5rem;
+            width: 80%;
             letter-spacing: 1px;
         }
 
         .services--contact-title {
             text-align: right;
+            width: 50%;
         }
 
         @media (min-width: 850px) {
@@ -53,8 +54,8 @@
     .services--content-container {
         width: 90%;
         margin: 0 auto;
-        margin-top: 5vh;
-        margin-bottom: 8em;
+        margin-top: 2em;
+        margin-bottom: 0em;
 
         .services--content {
             display: flex;
@@ -215,21 +216,26 @@
     //Form, Section
 
     .services__form-container {
-        // width: 100%;
-        height: 20em;
+        height: 30em;
         margin: 2em 0;
         display: flex;
         align-items: center;
         justify-content: center;
+        background: white;
+
+        @media(max-width: 850px) {
+            height: 25em;
+        }
     }
 
     //Contact Section
 
     .services__contact-container {
         margin: 0 auto;
-        margin-bottom: 2em;
+        margin-bottom: 0;;
         position: relative;
         width: 80%;
+        min-height: 60vh;
 
         .contact__list {
             margin-top: 4em;
@@ -243,7 +249,7 @@
                 align-items: center;
 
                 .contact__name {
-                    font-size: 1rem;
+                    font-size: 1.1rem;
                     padding: 2rem 0;
                     margin-right: 2rem;
                     transition: 0.3s;
@@ -324,7 +330,7 @@
             position: absolute;
             top: 5vh;
             right: -12vw;
-            z-index: 0;
+            z-index: -1;
             transition: 0.3s;
 
             &:hover {
@@ -400,7 +406,7 @@
 
 @media (min-width: 850px) {
     .services--container {
-        margin-top: 6em;
+        margin-top: 6.5rem;
         width: 100%;
     } 
 }

@@ -5,6 +5,22 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    overflow: hidden;
+}
+
+.services__form-title {
+    position: absolute;
+    font-size: 20rem;
+    color: transparent;
+    -webkit-text-stroke: 1px $main-color;
+    opacity: 0.175;
+    z-index: 0;
+    text-align: center;
+    display: inline;
+
+    @media(max-width: 805px) {
+        overflow-wrap: break-word;
+    }
 }
 
 .form-button__wrap {
@@ -13,6 +29,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    z-index: 1;
+    background: white;
 
     .form-button {
         position: absolute;
@@ -24,6 +42,7 @@
         background-color: rgba(255, 255, 255, 0);
         text-align: center;
         cursor: pointer;
+        z-index: 1;
     }
 
     .form-button__stroke {
@@ -42,6 +61,8 @@
     width: 45%;
     margin: 0 auto;
     position: absolute;
+    top: 8rem;
+    z-index: 2;
     
     input, textarea {
         border: none;
@@ -73,7 +94,7 @@
     }
 
     .contact__form-submit {
-        width: 30%;
+        width: fit-content;
         margin: 2rem auto;
         background: white;
         border: 2px solid $main-color;

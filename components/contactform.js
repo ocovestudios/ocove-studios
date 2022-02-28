@@ -22,10 +22,14 @@ const ContactForm = () => {
     const formInput2Controls = useAnimation()
     const formInput3Controls = useAnimation()
     const formButtonFade = useAnimation()
+    const formTitleFade = useAnimation()
+    const buttonWrapFade = useAnimation()
 
     const sequence = async () => {
+        await formTitleFade.start({ opacity: 0 })
         await buttonControls.start({ opacity: 0, transition: { duration: .27 }, transitionEnd: { display: "none" } })
         await buttonLineControls.start({ strokeDashoffset: [0, 820], transition: { duration: 1.3, ease: [0.12, 0, 0.07, 0] } })
+        await buttonWrapFade.start({ display: 'none' })
         await formControls.start({ display: "flex" })
         await formLine1Controls.start("animate")
         await formLine2Controls.start("animate")
@@ -38,13 +42,13 @@ const ContactForm = () => {
 
     return (
         <div className="form__wrapper">
-            <motion.div className="form-button__wrap">
+            <motion.h2 className="services__form-title" animate={formTitleFade}>MESSAGE</motion.h2>
+            <motion.div className="form-button__wrap" animate={buttonWrapFade}>
                 <motion.button className="form-button" animate={buttonControls} onClick={() => sequence()}>TALK TO US</motion.button>
                 <svg className="form-button__line" width="340" height="75" viewBox="0 0 340 75" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <motion.rect className="form-button__stroke" animate={buttonLineControls} x="1" y="1" width="338" height="72" fill="none" stroke="#323232" stroke-width="2" />
                 </svg>
             </motion.div>
-
             <motion.form className="contact-form" animate={formControls}>
                 <motion.div className="contact-form__details">
                     <motion.input animate={formInput1Controls} initial="initial" variants={inputVariants} type='text' placeholder="NAME" />
