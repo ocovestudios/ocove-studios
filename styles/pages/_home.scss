@@ -92,13 +92,18 @@ section {
         }
 
         .view-projects-button {
-            border: 1px solid black;
+            border: 2px solid $main-color;
             width: 320px;
             padding: 1rem 3rem;
             margin: auto;
             font-size: calc($home-body-fs - 4px);
             background-color: white;
-            cursor: pointer;
+
+            &:hover {
+                cursor: pointer;
+                background: $main-color;
+                color: white;
+            }
         }
     }
 }
