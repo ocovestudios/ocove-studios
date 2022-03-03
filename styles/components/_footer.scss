@@ -1,0 +1,98 @@
+.global__footer {
+    background: $main-color;
+    color: white;
+    padding: 1em 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+
+    .footer__info {
+        padding-left: 4em;
+        .footer__title {
+            display: flex;
+            padding: 2em 0 1em;
+            align-items: center;
+            
+            h2 {
+                font-size: 1.2em;
+            }
+        }
+    
+        .footer__email {
+            margin-bottom: 2em;
+        }
+    }
+
+    .footer__links {
+        padding-bottom: 2em;
+        height: 100%;
+        overflow: visible;
+
+        ul {
+            list-style-type: none;
+
+            .footer__link {
+                width: fit-content;
+                margin-top: 0.5em;
+                position: relative;
+                overflow: visible;
+
+                &:hover {
+                    cursor: pointer;
+                }
+
+                &::after {
+                    content: '';
+                    display: block;
+                    width: 0%;
+                    height: 2px;
+                    background: white;
+                    transition: 0.3s;
+                    margin-top: 3px;
+                }
+
+                &:hover::after {
+                    width: 100%;
+                }
+            }
+        }
+
+    }
+
+    .footer__policies {
+        margin-right: 4em;
+        padding-bottom: 2em;
+
+        ul {
+            list-style-type: none;
+        }
+        
+        .footer__policy-link {
+            display: inline-block;
+            margin-left: 1em;
+            border-bottom: 2px solid $main-color;
+            width: fit-content;
+
+            &:hover {
+                cursor: pointer;
+            }
+
+            &::after {
+                content: '';
+                display: block;
+                width: 0%;
+                height: 2px;
+                background: white;
+                transition: 0.3s;
+                margin-top: 3px;
+            }
+
+            &:hover::after {
+                width: 100%;
+            }
+            
+        }
+    }
+
+    
+}

@@ -60,7 +60,7 @@ export default function Home() {
   return (
     <>
       <section className="home1">
-        <div className="three-background" ref={e => threeContainer.current = e}></div>
+        <motion.div className="three-background" initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 1 }} ref={e => threeContainer.current = e}></motion.div>
         <BrandName />
         <motion.div className="home1__footer" variants={footerParentVariants} initial="initial" animate="animate">
           <motion.p>CREATIVE DIGITAL SERVICES</motion.p>
