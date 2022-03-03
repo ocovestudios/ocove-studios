@@ -23,49 +23,55 @@ const Services = () => {
                         <div className="services--asset-container">
                             <div className="services--asset">
                                 <Canvas >
-                                    <pointLight position={[20, 20, 10]} />
-                                    <pointLight position={[-20, -20, 10]} />
-                                    <Suspense fallback={null}><WebIcon /></Suspense>
+                                    <Suspense fallback={null}>
+                                        <pointLight position={[20, 20, 10]} />
+                                        <pointLight position={[-20, -20, 10]} />
+                                        <WebIcon />
+                                    </Suspense>
                                 </Canvas>
                             </div>
                             <motion.h3 className="services--asset-title" >WEB DEVELOPMENT</motion.h3>
                         </div>
                         <motion.div className='content__text'>
                             <p className="services--content-text content__text-focus">We specialise in modern web development and creative design</p>
-                            <p className="services--content-text"> We like to work with code. Whatever the project we develop an approach to meet your vision, 
-                            combining cutting-edge technologies with clean aesthetics to ensure you make the best impression.  </p>
+                            <p className="services--content-text"> We like to work with code. Whatever the project we develop an approach to meet your vision,
+                                combining cutting-edge technologies with clean aesthetics to ensure you make the best impression.  </p>
                         </motion.div>
                     </div >
                     <div className="services--content">
                         <div className="services--asset-container services--asset-container-2">
                             <div className="services--asset services--asset-2">
                                 <Canvas >
-                                    <pointLight position={[20, 20, 10]} />
-                                    <pointLight position={[-20, -20, 10]} />
-                                    <pointLight position={[-20, -20, 30]} />
-                                    <pointLight position={[-20, -20, -30]} />
-                                    <Suspense fallback={null}><Icon3D /></Suspense>
+                                    <Suspense fallback={null}>
+                                        <pointLight position={[20, 20, 10]} />
+                                        <pointLight position={[-20, -20, 10]} />
+                                        <pointLight position={[-20, -20, 30]} />
+                                        <pointLight position={[-20, -20, -30]} />
+                                        <Icon3D />
+                                    </Suspense>
                                 </Canvas>
                             </div>
                             <motion.h3 className="services--asset-title asset__title-2" >3D DESIGN</motion.h3>
                         </div>
                         <div className="content__text">
                             <p className="services--content-text content__text-2 content__text-focus">3D modelling and asset creation</p>
-                            <p className="services--content-text content__text-2"> We make custom assets in house, using the latest 2D and 3D software to 
-                            produce icons, models and scenes unique to your brand, sending your online presence into the next dimension.
-  </p>
+                            <p className="services--content-text content__text-2"> We make custom assets in house, using the latest 2D and 3D software to
+                                produce icons, models and scenes unique to your brand, sending your online presence into the next dimension.
+                            </p>
                         </div>
                     </div>
                     <div className="services--content">
                         <div className="services--asset-container">
                             <div className="services--asset">
-                                <Canvas >
-                                    <pointLight position={[20, 20, 10]} />
-                                    <pointLight position={[10, 10, 5]} />
-                                    <pointLight position={[-20, -20, 10]} />
-                                    <pointLight position={[-20, -20, 30]} />
-                                    <pointLight position={[-20, -20, -30]} />
-                                    <Suspense fallback={null}><LogoIcon /></Suspense>
+                                <Canvas>
+                                    <Suspense fallback={null}>
+                                        <pointLight position={[20, 20, 10]} />
+                                        <pointLight position={[10, 10, 5]} />
+                                        <pointLight position={[-20, -20, 10]} />
+                                        <pointLight position={[-20, -20, 30]} />
+                                        <pointLight position={[-20, -20, -30]} />
+                                        <LogoIcon />
+                                    </Suspense>
                                 </Canvas>
                             </div>
                             <motion.h3 className="services--asset-title" >VISUAL IDENTITY</motion.h3>
@@ -73,8 +79,8 @@ const Services = () => {
                         <div className="content__text">
                             <p className="services--content-text content__text-focus">Crafting bespoke digital spaces</p>
                             <p className="services--content-text">
-                            We work closely with people to grow their visual recognition, helping them forge a deeper connection with their audiences and 
-                            customers. We carefully consider your requirements and integrate your message from the initial design to the final product.                                </p>
+                                We work closely with people to grow their visual recognition, helping them forge a deeper connection with their audiences and
+                                customers. We carefully consider your requirements and integrate your message from the initial design to the final product.                                </p>
                         </div>
                     </div>
                 </motion.div >
