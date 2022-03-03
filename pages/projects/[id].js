@@ -1,8 +1,10 @@
 import { projectData } from "../../projectsData";
+import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/router";
 
 const Project = ({ projectData }) => {
+
 
     return (
         <div>
@@ -13,9 +15,17 @@ const Project = ({ projectData }) => {
                     <div className="info__links">
                         <div className="credits__container">
                             <p className="project__credits">{projectData.credits}</p>
-                            <a href={projectData.creditLink}>{projectData.creditName}</a>
+                            <a href={projectData.creditLink} target="_blank">{projectData.creditName}</a>
                         </div>
-                        <a href={projectData.visitLink}>VISIT</a>
+                        <a href={projectData.visitLink} target="_blank">VISIT</a>
+                    </div>
+                </div>
+                <div className="image__container">
+                    <div className="image-wrap__desktop">
+                        {projectData.desktopImages.map(img => <img className="desktop-image" src={img} alt={projectData.title} />)}
+                    </div>
+                    <div className="image-wrap__mobile">
+                        {projectData.mobileImages.map(img => <img className="mobile-image" src={img} alt={projectData.title} />)}
                     </div>
                 </div>
             </div>

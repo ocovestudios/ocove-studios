@@ -8,7 +8,9 @@ export const projectData = [
         credits: 'Design & Development:',
         creditName: 'Matt',
         creditLink: 'https://mattcongdon.info',
-        visitLink: 'https://autonomia.ac'
+        visitLink: 'https://autonomia.ac',
+        desktopImages: ['/img/projects/autonomics/autonomics-desktop.png'],
+        mobileImages: ['/img/projects/autonomics/autonomics-mobile.png', '/img/projects/autonomics/autonomics-mobile-2.png']
     },
     {
         title: 'Fireside Woodcraft',
