@@ -77,9 +77,9 @@ export default function Home() {
             <motion.div variants={info1Variants}>
               <div className="paragraph-arrow"><ParagraphArrow />
               </div> We are a UK-based freelance collective </motion.div>
-            <motion.div variants={info1Variants}> specialising in website development, video </motion.div>
-            <motion.div variants={info1Variants}> production and 3D visualisation, providing </motion.div>
-            <motion.div variants={info1Variants}> innovative digital products for creatives, </motion.div>
+            <motion.div variants={info1Variants}> specialising in website development, design </motion.div>
+            <motion.div variants={info1Variants}> and 3D visualisation, providing innovative </motion.div>
+            <motion.div variants={info1Variants}> digital products for creatives, </motion.div>
             <motion.div variants={info1Variants}> brands and businesses.</motion.div>
           </motion.div>
         </div>

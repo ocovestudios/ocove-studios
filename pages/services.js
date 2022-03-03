@@ -31,7 +31,9 @@ const Services = () => {
                             <motion.h3 className="services--asset-title" >WEB DEVELOPMENT</motion.h3>
                         </div>
                         <motion.div className='content__text'>
-                            <p className="services--content-text content__text-focus">We specialise in modern web development and creative design.</p><p className="services--content-text"> We like to work with code. Whatever the project we develop an approach to meet your requirements and digital vision, combining cutting-edge web technologies with creative design practices to make you stand out.</p><p className="services--content-text"> Each step is calculated. We work together at each stage of the design process, through wireframing all the way to production, carefully moulding a design that fits your digital scope. We believe collaboration brings the best results. </p>
+                            <p className="services--content-text content__text-focus">We specialise in modern web development and creative design</p>
+                            <p className="services--content-text"> We like to work with code. Whatever the project we develop an approach to meet your vision, 
+                            combining cutting-edge technologies with clean aesthetics to ensure you make the best impression.  </p>
                         </motion.div>
                     </div >
                     <div className="services--content">
@@ -48,7 +50,10 @@ const Services = () => {
                             <motion.h3 className="services--asset-title asset__title-2" >3D DESIGN</motion.h3>
                         </div>
                         <div className="content__text">
-                            <p className="services--content-text content__text-2 content__text-focus">Three dimensional modelling and asset creation.</p><p className="services--content-text content__text-2"> We make assets in house, whether it is for the web or a stand alone project we work with technologies within 3D design to create bespoke assets tailored to the project at hand.  </p>
+                            <p className="services--content-text content__text-2 content__text-focus">3D modelling and asset creation</p>
+                            <p className="services--content-text content__text-2"> We make custom assets in house, using the latest 2D and 3D software to 
+                            produce icons, models and scenes unique to your brand, sending your online presence into the next dimension.
+  </p>
                         </div>
                     </div>
                     <div className="services--content">
@@ -66,7 +71,10 @@ const Services = () => {
                             <motion.h3 className="services--asset-title" >VISUAL IDENTITY</motion.h3>
                         </div>
                         <div className="content__text">
-                            <p className="services--content-text content__text-focus">Crafting digital identities rooted in visual spaces.</p><p className="services--content-text">Working closely with businesses and artists to grow their visual recognition and develop a visual connection between your work and audience.</p><p className="services--content-text">We carefully consider your digital needs and combine a complete approach along with our other services.</p>
+                            <p className="services--content-text content__text-focus">Crafting bespoke digital spaces</p>
+                            <p className="services--content-text">
+                            We work closely with people to grow their visual recognition, helping them forge a deeper connection with their audiences and 
+                            customers. We carefully consider your requirements and integrate your message from the initial design to the final product.                                </p>
                         </div>
                     </div>
                 </motion.div >
