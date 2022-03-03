@@ -42,9 +42,6 @@ const ContactForm = () => {
 
     return (
         <div className="form__wrapper">
-            <motion.svg className='form__title-container' width='100%' height='100%' animate={formTitleFade} initial={{ opacity: 0.1 }}>
-                <motion.text className="services__form-title" x="50%" y="55%" dominant-baseline="middle" text-anchor="middle" >MESSAGE</motion.text>
-            </motion.svg>
             <motion.div className="form-button__wrap" animate={buttonWrapFade}>
                 <motion.button className="form-button" animate={buttonControls} onClick={() => sequence()}>TALK TO US</motion.button>
                 <svg className="form-button__line" width="340" height="75" viewBox="0 0 340 75" fill="none" xmlns="http://www.w3.org/2000/svg">
