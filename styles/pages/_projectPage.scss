@@ -35,20 +35,20 @@
         // overflow-y: scroll;
 
         .image-wrap__desktop {
-            margin: 0 0 50px 0;
 
             .desktop-image {
-                width: 500px
+                width: 500px;
+                margin: 0 0 80px 0
             }
         }
 
         .image-wrap__mobile {
             display: flex;
             justify-content: space-between;
-            margin: 0 0 50px 0;
 
             .mobile-image {
-              width: 210px
+              width: 210px;
+              margin: 0 0 80px 0;
             }
         }
     }

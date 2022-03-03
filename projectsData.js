@@ -22,12 +22,26 @@ export const projectData = [
         title: 'Helen Howard Ceramics',
         id: 'helen-howard',
         url: '/projects/helen-howard',
-        imageUrl: '/img/projects/helenhoward.jpg'
+        imageUrl: '/img/projects/helen-howard.jpg',
+        description: 'Helen Howard is a ceramic and drawing artist whose work is inspired by observations of the natural world. We developed Helen’s website, which displays collections of Raku-fired pots, drawings and information about her work.',
+        credits: 'Design & Development:',
+        creditName: 'Billy',
+        creditLink: 'https://bmbservices.netlify.app',
+        visitLink: 'https://www.helenhowardceramics.co.uk',
+        desktopImages: ['/img/projects/helen-howard/helen-howard-1.png', '/img/projects/helen-howard/helen-howard-2.png', '/img/projects/helen-howard/helen-howard-3.png', '/img/projects/helen-howard/helen-howard-4.png'],
+        mobileImages: []
     },
     {
         title: 'Isabel Knowland',
         id: 'isabel-knowland',
         url: '/projects/isabel-knowland',
-        imageUrl: '/img/projects/isabelknowland.jpg'
+        imageUrl: '/img/projects/isabel-knowland.jpg',
+        description: 'Isabel Knowland is a multidisciplinary artist working in sculpture, painting, installation, and printmaking. We designed and developed her website to organise her collection of work and grow her online presence.',
+        credits: 'Design & Development:',
+        creditName: 'Billy',
+        creditLink: 'https://bmbservices.netlify.app',
+        visitLink: 'https://www.isabelknowland.com',
+        desktopImages: ['/img/projects/isabel-knowland/isabel-knowland-1.png'],
+        mobileImages: []
     }
 ]
