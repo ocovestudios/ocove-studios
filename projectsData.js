@@ -9,7 +9,8 @@ export const projectData = [
         title: 'Autonomics Research Centre',
         id: 'autonomics-research-centre',
         url: '/projects/autonomics-research-centre',
-        imageUrl: '/img/projects/autonomics.png'
+        imageUrl: '/img/projects/autonomics.png',
+        images: ['img/',]
     },
     {
         title: 'John Hounam Fine Art',
