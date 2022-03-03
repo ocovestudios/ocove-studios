@@ -5,11 +5,16 @@ import { Canvas } from "@react-three/fiber";
 import WebIcon from '../components/webIcon';
 import Icon3D from '../components/3dIcon';
 import LogoIcon from '../components/logoIcon'
+import Head from "next/head";
 
 const Services = () => {
 
     return (
         <>
+            <Head>
+                <title>Services | Ocove Studios</title>
+                <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+            </Head>
             <div className="services--container">
                 <div className="services--header-container">
                     <motion.h2 className="services--header-title" initial={{ opacity: 0, y: 40 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.4 }}>What we do</motion.h2>

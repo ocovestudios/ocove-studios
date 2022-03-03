@@ -5,6 +5,7 @@ import Link from "next/link";
 import { useEffect, useRef } from "react";
 import { ThreeScene, threeScene } from "../components/ThreeComponents/threeScene";
 import { motion, useAnimation } from "framer-motion"
+import Head from "next/head";
 
 export default function Home() {
 
@@ -59,6 +60,10 @@ export default function Home() {
 
   return (
     <>
+      <Head>
+        <title>Home | Ocove Studios</title>
+        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+      </Head>
       <section className="home1">
         <motion.div className="three-background" initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 1 }} ref={e => threeContainer.current = e}></motion.div>
         <BrandName />
