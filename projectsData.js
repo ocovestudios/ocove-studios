@@ -1,56 +1,26 @@
 export const projectData = [
     {
-        title: 'Chappel Galleries',
-        id: 'chappel-galleries',
-        url: '/projects/chappel-galleries',
-        imageUrl: '/img/projects/chappelGalleries.jpg'
-    },
-    {
         title: 'Autonomics Research Centre',
         id: 'autonomics-research-centre',
         url: '/projects/autonomics-research-centre',
         imageUrl: '/img/projects/autonomics.png'
     },
     {
-        title: 'John Hounam Fine Art',
-        id: 'john-hounam-fine-art',
-        url: '/projects/john-hounam-fine-art',
-        imageUrl: '/img/projects/jHounam.jpg'
+        title: 'Fireside Woodcraft',
+        id: 'fireside-woodcraft',
+        url: '/projects/fireside-woodcraft',
+        imageUrl: '/img/projects/firesidewoodcraft.jpg'
     },
     {
-        title: 'Chappel Galleries',
-        id: 'chappel-galleries',
-        url: '/projects/chappel-galleries',
-        imageUrl: '/img/projects/chappelGalleries.jpg'
+        title: 'Helen Howard Ceramics',
+        id: 'helen-howard',
+        url: '/projects/helen-howard',
+        imageUrl: '/img/projects/helenhoward.jpg'
     },
     {
-        title: 'Autonomics Research Centre',
-        id: 'autonomics-research-centre',
-        url: '/projects/autonomics-research-centre',
-        imageUrl: '/img/projects/autonomics.png'
-    },
-    {
-        title: 'John Hounam Fine Art',
-        id: 'john-hounam-fine-art',
-        url: '/projects/john-hounam-fine-art',
-        imageUrl: '/img/projects/jHounam.jpg'
-    },
-    {
-        title: 'Chappel Galleries',
-        id: 'chappel-galleries',
-        url: '/projects/chappel-galleries',
-        imageUrl: '/img/projects/chappelGalleries.jpg'
-    },
-    {
-        title: 'Autonomics Research Centre',
-        id: 'autonomics-research-centre',
-        url: '/projects/autonomics-research-centre',
-        imageUrl: '/img/projects/autonomics.png'
-    },
-    {
-        title: 'John Hounam Fine Art',
-        id: 'john-hounam-fine-art',
-        url: '/projects/john-hounam-fine-art',
-        imageUrl: '/img/projects/jHounam.jpg'
-    },
+        title: 'Isabel Knowland',
+        id: 'isabel-knowland',
+        url: '/projects/isabel-knowland',
+        imageUrl: '/img/projects/isabelknowland.jpg'
+    }
 ]
