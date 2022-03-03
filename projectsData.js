@@ -3,7 +3,12 @@ export const projectData = [
         title: 'Autonomics Research Centre',
         id: 'autonomics-research-centre',
         url: '/projects/autonomics-research-centre',
-        imageUrl: '/img/projects/autonomics.png'
+        imageUrl: '/img/projects/autonomics.png',
+        description: 'The Autonomics Research Centre is an art and academic research collective. We provided UI/UX design, website development and creative direction for their online presence and published output.',
+        credits: 'Design & Development:',
+        creditName: 'Matt',
+        creditLink: 'https://mattcongdon.info',
+        visitLink: 'https://autonomia.ac'
     },
     {
         title: 'Fireside Woodcraft',

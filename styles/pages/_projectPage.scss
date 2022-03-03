@@ -1,5 +1,6 @@
-.project--container {
-    .project--back-arrow {
+.project__container {
+
+    .project__back-arrow {
         font-size: 2rem;
         width: fit-content;
 
@@ -7,4 +8,24 @@
             cursor: pointer;
         }
     }
+    
+    .info__container {
+        width: 500px;
+        margin: 8em 5em 0 5em;
+
+        .project__header {
+            margin: 0 0 3em 0;
+        }
+
+        .project__description {
+            margin: 0 0 5em 0;
+        }
+
+        .info__links {
+            display: flex;
+            justify-content: space-between;
+        }
+
+    }
+    
 }

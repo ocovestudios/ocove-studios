@@ -48,7 +48,7 @@ const Projects = () => {
                                 {/*<Image src={project.imageUrl} alt={project.title} width={600} height={400} layout='fill' />*/}
                             </motion.div>
                         </Link>
-                        <Link href={project.url} passHref><motion.h2 className="tile__title">{project.title}</motion.h2></Link>
+                        <Link href={project.url} passHref><motion.p className="tile__title">{project.title}</motion.p></Link>
                     </motion.div>
                 )
             })}
