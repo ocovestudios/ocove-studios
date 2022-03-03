@@ -9,7 +9,7 @@ const setYRotation = (obj, multiplier) => {
 };
 
 const setContainerOpacity = (obj, multiplier) => {
-    obj.style.opacity = 2 - (window.scrollY / multiplier);
+    obj.style.opacity = 2.6 - (window.scrollY / multiplier);
 }
 
 export { setLightPosition, setYRotation, setContainerOpacity }
