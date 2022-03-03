@@ -5,11 +5,15 @@ const setLightPosition = (obj, multiplier) => {
 };
 
 const setYRotation = (obj, multiplier) => {
+
     obj.rotation.y = -1.9 + (window.scrollY / multiplier);
 };
 
 const setContainerOpacity = (obj, multiplier) => {
-    obj.style.opacity = 2.6 - (window.scrollY / multiplier);
+
+    let scrollPercentage = (document.documentElement.scrollTop + document.body.scrollTop) / (document.documentElement.scrollHeight - document.documentElement.clientHeight) * 100
+
+    obj.style.opacity = 1.4 - (scrollPercentage / 100);
 }
 
 export { setLightPosition, setYRotation, setContainerOpacity }

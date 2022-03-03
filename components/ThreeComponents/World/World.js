@@ -28,15 +28,15 @@ class World {
         const directionalLight = createDirectionalLight()
         const directionalLight2 = createDirectionalLight()
         const ambientLight = createAmbientLight()
-        directionalLight.position.set(2,0,0)
-        directionalLight2.position.set(-2,0,0)
+        directionalLight.position.set(2, 0, 0)
+        directionalLight2.position.set(-2, 0, 0)
         directionalLight.target = plane;
         directionalLight2.target = plane;
 
 
         const scrollFunctions = [
-            function() { setYRotation(plane, 2000) }, 
-            function() { setContainerOpacity(container, 500) }
+            function () { setYRotation(plane, 2000) },
+            function () { setContainerOpacity(container, 0) }
         ]
         const lightScroller = new Scroller(scrollFunctions);
 
@@ -50,7 +50,7 @@ class World {
 
         let t = 0;
         let location = 0;
-    
+
         plane.tick = (delta) => {
             t += 0.125 * delta;
             location += 0.125 * delta;
@@ -75,7 +75,7 @@ class World {
     stop() {
         loop.stop()
     }
-    
+
 }
 
 export { World }
