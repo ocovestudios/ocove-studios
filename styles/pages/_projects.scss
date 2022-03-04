@@ -14,13 +14,11 @@
         width: auto;
 
         .tile__image-container {
-            border-radius: 5px;
             width: 23vw;
             height: 25vh;
             position: relative;
             overflow: hidden;
             transition: 0.8s;
-            border: 1px solid black;
 
             &:hover {
                 cursor: pointer;
