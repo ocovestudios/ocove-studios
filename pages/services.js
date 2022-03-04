@@ -23,7 +23,7 @@ const Services = () => {
                         <motion.rect width="10" height="10" transform="matrix(1 0 0 -1 275 10)" fill="black" initial={{ x: 0, opacity: 0 }} animate={{ x: 276.27, opacity: 1 }} transition={{ duration: 1, ease: 'easeInOut' }} viewport={{ once: true }} />
                     </svg>
                 </div>
-                <motion.div className="services--content-container" initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.4, duration: 1 }}>
+                <motion.div className="services--content-container">
                     <div className="services--content">
                         <div className="services--asset-container">
                             <div className="services--asset">
