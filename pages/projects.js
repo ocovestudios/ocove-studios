@@ -2,6 +2,7 @@ import { projectData } from "../projectsData";
 import Link from "next/link";
 import { motion } from "framer-motion";
 import Head from "next/head";
+import Image from "next/image";
 
 const Projects = () => {
 
@@ -22,18 +23,19 @@ const Projects = () => {
 
     const projectTile = {
         initial: {
-            y: 100,
+            y: 50,
             opacity: 0
         },
         animate: {
             y: 0,
-            opacity: 1
+            opacity: 1,
         },
         exit: {
             opacity: 0,
-            x: -600,
+            x: -300,
             transition: {
-                duration: 0.4
+                duration: .4,
+                ease: "easeIn"
             }
         }
     }
@@ -44,16 +46,17 @@ const Projects = () => {
                 <title>Projects | Ocove Studios</title>
                 <meta name="viewport" content="initial-scale=1.0, width=device-width" />
             </Head>
+            
             <motion.div className="projects__container" variants={projectContainer} initial='initial' animate='animate' exit='exit'>
                 {projectData.map((project, projectIndex) => {
                     return (
                         <motion.div className="projects__tile" variants={projectTile} key={`projectTile-${projectIndex}`}>
                             <Link href={project.url} passHref>
                                 <motion.div className="tile__image-container">
-                                    {/*<Image src={project.imageUrl} alt={project.title} width={600} height={400} layout='fill' />*/}
+                                    <Image src={project.imageUrl} alt={project.title} width={600} height={400} layout='fill' />
                                 </motion.div>
                             </Link>
-                            <Link href={project.url} passHref><motion.h2 className="tile__title">{project.title}</motion.h2></Link>
+                            <Link href={project.url} passHref><motion.p className="tile__title">{project.title}</motion.p></Link>
                         </motion.div>
                     )
                 })}
