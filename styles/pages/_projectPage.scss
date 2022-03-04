@@ -1,6 +1,11 @@
 .project__container {
     display: flex;
 
+    @media(max-width: 600px) {
+        display: flex;
+        flex-direction: column;
+    }
+
     .project__back-arrow {
         font-size: 2rem;
         width: fit-content;
@@ -11,8 +16,17 @@
     }
     
     .info__container {
-        width: 500px;
-        margin: 8em 5em 0 5em;
+        width: 50%;
+        height: 100vh;
+        margin: 8em 4em 0 4em;
+        overflow: hidden;
+        position: sticky;
+        top: 8em;
+        height: fit-content;
+
+        @media(width: 600px) {
+            width: 100%
+        }
 
         .project__header {
             margin: 0 0 3em 0;
@@ -27,12 +41,20 @@
             justify-content: space-between;
         }
 
+        a {
+            text-decoration: none;
+            color: $main-color;
+
+            &:hover {
+                text-decoration: underline;
+            }
+        } 
     }
     
     .image__container {
         width: 500px;
         margin: 8em 5em 0 5em;
-        // overflow-y: scroll;
+        // overflow: auto;
 
         .image-wrap__desktop {
 
