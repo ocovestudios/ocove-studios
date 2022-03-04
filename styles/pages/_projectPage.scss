@@ -1,7 +1,8 @@
 .project__container {
     display: flex;
+    width: fit-content;
 
-    @media(max-width: 600px) {
+    @media(max-width: 700px) {
         display: flex;
         flex-direction: column;
     }
@@ -16,16 +17,16 @@
     }
     
     .info__container {
-        width: 50%;
         height: 100vh;
-        margin: 8em 4em 0 4em;
-        overflow: hidden;
+        margin: 8em 4em 4em 4em;
         position: sticky;
         top: 8em;
         height: fit-content;
 
-        @media(width: 600px) {
-            width: 100%
+        @media(max-width: 939px) {
+            min-width: 550px;
+            position: relative;
+            top: 0;
         }
 
         .project__header {
@@ -34,6 +35,10 @@
 
         .project__description {
             margin: 0 0 5em 0;
+
+            @media(max-width: 939px) {
+                width: 75%;
+            }
         }
 
         .info__links {
