@@ -23,18 +23,19 @@ const Projects = () => {
 
     const projectTile = {
         initial: {
-            y: 100,
+            y: 50,
             opacity: 0
         },
         animate: {
             y: 0,
-            opacity: 1
+            opacity: 1,
         },
         exit: {
             opacity: 0,
-            x: -600,
+            x: -300,
             transition: {
-                duration: 0.4
+                duration: .4,
+                ease: "easeIn"
             }
         }
     }

@@ -16,7 +16,14 @@ export const projectData = [
         title: 'Fireside Woodcraft',
         id: 'fireside-woodcraft',
         url: '/projects/fireside-woodcraft',
-        imageUrl: '/img/projects/firesidewoodcraft.jpg'
+        imageUrl: '/img/projects/fireside-woodcraft.jpg',
+        description: '',
+        credits: 'Design & Development:',
+        creditName: 'Arran',
+        creditLink: 'https://www.arranbaker.com',
+        visitLink: '',
+        desktopImages: [],
+        mobileImages: []
     },
     {
         title: 'Helen Howard Ceramics',
