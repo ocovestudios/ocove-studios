@@ -2,12 +2,12 @@ import { projectData } from "../../projectsData";
 import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/router";
+import {motion} from 'framer-motion'
 
 const Project = ({ projectData }) => {
 
-
     return (
-        <div>
+        <motion.div initial={{y: 1000}} animate={{y: 0, transition:{duration: .5}}} exit={{y: 1000, transition:{duration: .5}}}>
             <div className="project__container">
                 <div className="info__container">
                     <h2 className="project__header">{projectData.title}</h2>
@@ -20,16 +20,16 @@ const Project = ({ projectData }) => {
                         <a href={projectData.visitLink} target="_blank">VISIT</a>
                     </div>
                 </div>
-                <div className="image__container">
+                <motion.div className="image__container" initial={{opacity: 0}} animate={{opacity: 1, transition:{delay: .5, duration: .5}}}>
                     <div className="image-wrap__desktop">
                         {projectData.desktopImages.map(img => <img className="desktop-image" src={img} alt={projectData.title} />)}
                     </div>
                     <div className="image-wrap__mobile">
                         {projectData.mobileImages.map(img => <img className="mobile-image" src={img} alt={projectData.title} />)}
                     </div>
-                </div>
+                </motion.div>
             </div>
-        </div>
+        </motion.div>
     );
 }
 
