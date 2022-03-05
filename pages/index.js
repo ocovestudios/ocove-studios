@@ -6,6 +6,8 @@ import { useEffect, useRef } from "react";
 import { ThreeScene, threeScene } from "../components/ThreeComponents/threeScene";
 import { motion, useAnimation } from "framer-motion"
 import Head from "next/head";
+import Footer from '../components/footer';
+
 
 export default function Home() {
 
@@ -109,7 +111,7 @@ export default function Home() {
           <Link href='/projects'><motion.button className="view-projects-button" variants={info2RightVariants}> SEE OUR WORK </motion.button></Link>
         </motion.div>
       </section>
-
+      <Footer />
     </>
   )
 }

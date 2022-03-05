@@ -6,6 +6,7 @@ import WebIcon from '../components/webIcon';
 import Icon3D from '../components/3dIcon';
 import LogoIcon from '../components/logoIcon'
 import Head from "next/head";
+import Footer from '../components/footer'
 
 const Services = () => {
 
@@ -222,8 +223,8 @@ const Services = () => {
                 </div>
 
             </div >
+            <Footer />
         </>
-
     );
 }
 
