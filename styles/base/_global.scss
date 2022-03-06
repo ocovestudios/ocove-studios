@@ -1,13 +1,24 @@
+$main-color: #292929;
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     scrollbar-width: thin;
+    scrollbar-color: $main-color white;
 }
-
-$main-color: #292929;
 
 body {
     color: $main-color;
     overflow-x: hidden;
 }
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: $main-color;
+}
+
+
