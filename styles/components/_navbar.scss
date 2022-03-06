@@ -11,21 +11,22 @@
     .nav__logo {
         width: 80px;
         height: 42px;
-        margin: 0 10px 0 0;
+        margin: 0 15px 0 0;
+        transform: translateX(7px);
         &:hover {
             cursor: pointer;
 
             .nav-logo-path {
-                stroke-dasharray: 1190;
+                stroke-dasharray: 1300;
                 stroke-dashoffset: 1000;
-                animation: drawNavLogo 1.2s linear forwards;
+                animation: drawNavLogo 0.8s linear forwards;
               }
 
               @keyframes drawNavLogo {
                 0%  {stroke-dashoffset: 0}
                 15% {stroke-dashoffset: 600}
-                50% {stroke-dashoffset: 1190}
-                55% {stroke-dashoffset: 1190}
+                50% {stroke-dashoffset: 1300}
+                55% {stroke-dashoffset: 1300}
                 85% {stroke-dashoffset: 500}
                 100% {stroke-dashoffset: 0}
             }
