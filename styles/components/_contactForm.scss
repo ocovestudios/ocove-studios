@@ -29,6 +29,14 @@
     z-index: 1;
     background: white;
 
+    &:hover {
+        cursor: pointer;
+    }
+
+    @media(max-width: 850px) {
+        width: 70%;
+    }
+
     .form-button {
         position: absolute;
         width: fit-content;
@@ -40,11 +48,14 @@
         text-align: center;
         cursor: pointer;
         z-index: 1;
+        transition: 0.2s;
+        
         &:hover {
             cursor: pointer;
             background: $main-color;
             color: white;
         }
+        
     }
 
     .form-button__stroke {
@@ -116,5 +127,7 @@
 @media(max-width: 850px) {
     .contact-form {
         width: 80%;
+
+        top: 2em;
     }
 }

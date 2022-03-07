@@ -7,7 +7,7 @@ const Footer = () => {
             <div className="footer__info">
                 <div className="footer__title">
                     <FooterLogo />
-                    <h2>Ocove Studios</h2>
+                    <p>© {new Date().getFullYear()}</p>
                 </div>
                 <div className="footer__email">
                     <p>ocovestudios@gmail.com</p>

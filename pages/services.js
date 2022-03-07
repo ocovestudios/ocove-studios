@@ -1,4 +1,4 @@
-import { motion } from "framer-motion";
+import { animate, motion } from "framer-motion";
 import ContactForm from "../components/contactform";
 import { Suspense } from "react";
 import { Canvas } from "@react-three/fiber";
@@ -10,6 +10,18 @@ import Footer from '../components/footer'
 
 const Services = () => {
 
+    const servicesAssetFade = {
+        initial: { opacity: 0 },
+        animate: { opacity: 1, transition: { duration: 1, delay: 1.5 } },
+
+    }
+
+    const servicesTextFade = {
+        initial: { opacity: 0 },
+        animate: { opacity: 1, transition: { duration: 1, delay: 2 } },
+
+    }
+
     return (
         <>
             <Head>
@@ -20,13 +32,13 @@ const Services = () => {
                 <div className="services--header-container">
                     <motion.h2 className="services--header-title" initial={{ opacity: 0, y: 40 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.4 }}>What we do</motion.h2>
                     <svg width="255" height="10" viewBox="0 0 285 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <motion.line y1="-1" x2="276.27" y2="-1" transform="matrix(1 0 0 -1 0 4)" stroke="black" strokeWidth="2" initial={{ x2: 0, opacity: 0 }} animate={{ x2: 276.27, opacity: 1 }} transition={{ duration: 1, ease: 'easeInOut' }} viewport={{ once: true }} />
-                        <motion.rect width="10" height="10" transform="matrix(1 0 0 -1 275 10)" fill="black" initial={{ x: 0, opacity: 0 }} animate={{ x: 276.27, opacity: 1 }} transition={{ duration: 1, ease: 'easeInOut' }} viewport={{ once: true }} />
+                        <motion.line y1="-1" x2="276.27" y2="-1" transform="matrix(1 0 0 -1 0 4)" stroke="black" strokeWidth="2" initial={{ x2: 0, opacity: 0 }} animate={{ x2: 276.27, opacity: 1, }} transition={{ duration: 1, ease: 'easeInOut', delay: 0.5 }} viewport={{ once: true }} />
+                        <motion.rect width="10" height="10" transform="matrix(1 0 0 -1 275 10)" fill="black" initial={{ x: 0, opacity: 0 }} animate={{ x: 276.27, opacity: 1 }} transition={{ duration: 1, ease: 'easeInOut', delay: 0.5 }} viewport={{ once: true }} />
                     </svg>
                 </div>
-                <motion.div className="services--content-container">
+                <div className="services--content-container">
                     <div className="services--content">
-                        <div className="services--asset-container">
+                        <motion.div className="services--asset-container" variants={servicesAssetFade} initial='initial' animate='animate'>
                             <div className="services--asset">
                                 <Canvas >
                                     <Suspense fallback={null}>
@@ -36,16 +48,16 @@ const Services = () => {
                                     </Suspense>
                                 </Canvas>
                             </div>
-                            <motion.h3 className="services--asset-title" >WEB DEVELOPMENT</motion.h3>
-                        </div>
-                        <motion.div className='content__text'>
+                            <h3 className="services--asset-title" >WEB DEVELOPMENT</h3>
+                        </motion.div>
+                        <motion.div className='content__text' variants={servicesTextFade} initial='initial' animate='animate'>
                             <p className="services--content-text content__text-focus">We specialise in modern web development and creative design</p>
                             <p className="services--content-text"> We like to work with code. Whatever the project we develop an approach to meet your vision,
                                 combining cutting-edge technologies with clean aesthetics to ensure you make the best impression.  </p>
                         </motion.div>
                     </div >
                     <div className="services--content">
-                        <div className="services--asset-container services--asset-container-2">
+                        <motion.div className="services--asset-container services--asset-container-2" variants={servicesAssetFade} initial='initial' animate='animate'>
                             <div className="services--asset services--asset-2">
                                 <Canvas >
                                     <Suspense fallback={null}>
@@ -57,17 +69,17 @@ const Services = () => {
                                     </Suspense>
                                 </Canvas>
                             </div>
-                            <motion.h3 className="services--asset-title asset__title-2" >3D DESIGN</motion.h3>
-                        </div>
-                        <div className="content__text">
+                            <h3 className="services--asset-title asset__title-2" >3D DESIGN</h3>
+                        </motion.div>
+                        <motion.div className="content__text" variants={servicesTextFade} initial='initial' animate='animate'>
                             <p className="services--content-text content__text-2 content__text-focus">3D modelling and asset creation</p>
                             <p className="services--content-text content__text-2"> We make custom assets in house, using the latest 2D and 3D software to
                                 produce icons, models and scenes unique to your brand, sending your online presence into the next dimension.
                             </p>
-                        </div>
+                        </motion.div>
                     </div>
-                    <div className="services--content">
-                        <div className="services--asset-container">
+                    <div className="services--content services__content-3" >
+                        <motion.div className="services--asset-container" variants={servicesAssetFade} initial='initial' animate='animate'>
                             <div className="services--asset">
                                 <Canvas>
                                     <Suspense fallback={null}>
@@ -80,16 +92,16 @@ const Services = () => {
                                     </Suspense>
                                 </Canvas>
                             </div>
-                            <motion.h3 className="services--asset-title" >VISUAL IDENTITY</motion.h3>
-                        </div>
-                        <div className="content__text">
+                            <h3 className="services--asset-title">VISUAL IDENTITY</h3>
+                        </motion.div>
+                        <motion.div className="content__text" variants={servicesTextFade} initial='initial' animate='animate'>
                             <p className="services--content-text content__text-focus">Crafting bespoke digital spaces</p>
                             <p className="services--content-text">
                                 We work closely with people to grow their visual recognition, helping them forge a deeper connection with their audiences and
                                 customers. We carefully consider your requirements and integrate your message from the initial design to the final product.                                </p>
-                        </div>
+                        </motion.div>
                     </div>
-                </motion.div >
+                </div >
                 <div className="services__form-container">
                     <ContactForm />
                 </div>
