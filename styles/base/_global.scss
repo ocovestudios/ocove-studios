@@ -11,6 +11,7 @@ $main-color: #292929;
 body {
     color: $main-color;
     overflow-x: hidden;
+    min-width: 689px;
 }
 
 ::-webkit-scrollbar {
