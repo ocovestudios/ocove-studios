@@ -5,7 +5,7 @@ section {
 .brand-name {
     display: flex;
     height: 400px;
-    width: clamp(500px, 70vw, 900px);
+    width: clamp(300px, 70vw, 900px);
     margin: 5em 5%;
     z-index: 1;
 }
@@ -14,7 +14,8 @@ section {
     display: flex;
     justify-items: center;
     align-content: center;
-
+    min-width: 350px;
+    
     @media(max-width: 650px) {
         height: 90vh;
     }
@@ -22,7 +23,7 @@ section {
 
 .home1__footer {
     width: 100%;
-    min-width: 650px;
+    min-width: 350px;
     position: absolute;
     bottom: 0px;
     display: flex;
@@ -31,10 +32,15 @@ section {
     padding: 3% 5%;
     font-size: calc($nav-fs + 1px);
 
+    @media(max-width: 650px) {
+        font-size: calc($nav-fs + -2px);
+    }
+
     .footer__contact-button-wrapper {
         display: flex;
         align-items: center;
         justify-content: center;
+        margin: 0 0 0 20px;
     }
 
     .footer__reveal-contact-button {
@@ -43,6 +49,10 @@ section {
         font-size: 38px;
         cursor: pointer;
         padding: 5px;
+
+        @media(max-width: 400px) {
+            font-size: 30px;
+        }
     }
 
     .footer__contact-button {
@@ -68,7 +78,11 @@ section {
     align-items: center;
 
     .info-container {
-        width: clamp(600px, 40vw, 700px)
+        width: clamp(600px, 40vw, 700px);
+
+        @media(max-width: 850px) {
+            width: clamp(300px, 70vw, 600px);
+        }
     }
 
     .paragraph-arrow {
@@ -79,8 +93,25 @@ section {
 
     .home2__info {
         font-size: $home-body-fs;
+
+        @media(max-width: 850px) {
+            font-size: calc($home-body-fs - 5px);
+            width: 100%;
+        }
+
+        @media(max-width: 550px) {
+            display: none;
+        }
     }
 
+    .home2__info--mobile {
+        display: none;
+
+        @media(max-width: 550px) {
+            display: block;
+            font-size: calc($home-body-fs - 4px);
+        }
+    }
 }
 
 .home3 {
@@ -91,7 +122,10 @@ section {
         flex-direction: column;
         align-items: normal;
         margin-bottom: 18em;
+    }
 
+    @media(max-width: 650px) {
+        margin-bottom: 8em;
     }
 
     .home3__left, .home3__right {
@@ -101,7 +135,7 @@ section {
         justify-content: center;
 
         @media(max-width: 900px) {
-            width: 80%;
+            width: 100%;
             margin: 0
         }
 
@@ -109,10 +143,36 @@ section {
             font-size: calc($home-body-fs - 2px);
             width: 75%;
             margin: 0 0 8% 0;
+
+            @media(max-width: 850px) {
+            font-size: calc($home-body-fs - 6px);
+            }
+
+            @media(max-width: 650px) {
+                font-size: calc($home-body-fs - 6px);
+                width: 90%;
+            }
+
+            @media(max-width: 550px) {
+                display: none
+            }
+        }
+
+        .home3__info--mobile {
+            display: none;
+    
+            @media(max-width: 550px) {
+                display: block;
+                font-size: calc($home-body-fs - 6px);
+            }
         }
         
         .particle-container {
             height: 400px;
+
+            @media(max-width: 650px) {
+                height: 350px
+            }
         }
 
         .view-projects-button {
@@ -136,8 +196,11 @@ section {
             width: 100%;
             margin-top: 8em;
         }
-    }
 
+        @media(max-width: 650px) {
+            margin-top: 5em;
+        }
+    }
 }
 
 .three-background {

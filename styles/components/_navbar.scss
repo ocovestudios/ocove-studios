@@ -8,6 +8,10 @@
     top: 0;
     z-index: 20;
 
+        @media (max-width: 850px) {
+            padding: 0.7rem 0.5rem 0.5rem 0.5rem;
+        }
+
     .nav__logo {
         width: 80px;
         min-width: 70px;
@@ -40,10 +44,10 @@
         background-color: $main-color;
     }
     
-    @media (max-width: 200px) {
-        // .nav__line {
-        //     display: none;
-        // }
+    @media (max-width: 400px) {
+        .nav__line {
+            display: none;
+        }
     }
 
     .nav__links-list {
@@ -63,18 +67,11 @@
     }
 
     @media (max-width: 850px) {
-        .nav {
-            display: flex;
-            justify-content: space-evenly;
-        }
         .nav__logo {
             width: 70px;
         }
         .nav__home {
             display: none;
-        }
-        .nav__links-list {
-            font-size: calc($nav-fs + 3px);  
         }
     }
 }

@@ -66,8 +66,8 @@ export default function Home() {
         <title>Home | Ocove Studios</title>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       </Head>
+      <motion.div className="three-background" initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 1 }} ref={e => threeContainer.current = e}></motion.div>
       <section className="home1">
-        <motion.div className="three-background" initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 1 }} ref={e => threeContainer.current = e}></motion.div>
         <BrandName />
         <motion.div className="home1__footer" variants={footerParentVariants} initial="initial" animate="animate">
           <motion.p>CREATIVE DIGITAL SERVICES</motion.p>
@@ -89,6 +89,13 @@ export default function Home() {
             <motion.div variants={info1Variants}> digital products for creatives, </motion.div>
             <motion.div variants={info1Variants}> brands and businesses.</motion.div>
           </motion.div>
+          <div className="home2__info--mobile">
+            We are a UK-based freelance collective
+            specialising in website development, design
+            and 3D visualisation, providing innovative
+            digital products for creatives,
+            brands and businesses.
+          </div>
         </div>
       </section>
 
@@ -102,6 +109,10 @@ export default function Home() {
                 Collaborating as individuals, we can make things together that we couldn&#39;t alone.
               </motion.div>
             </motion.div>
+            <div className="home3__info--mobile">
+            Working as a collective allows us to bring our best creative assets to projects.<br/><br/>
+            Collaborating as individuals, we can make things together that we couldn&#39;t alone.
+            </div>
           </div>
         </div>
         <motion.div className="home3__right" variants={info2ParentVariants} initial="initial" whileInView="animate" viewport={{ once: true }}>
