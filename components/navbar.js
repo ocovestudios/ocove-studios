@@ -1,8 +1,17 @@
 import Link from "next/link";
 import NavbarLogo from "./navbarlogo"
 import { motion } from "framer-motion"
+import { useRouter } from "next/router";
+import { useEffect, useState } from 'react';
 
 const Navbar = () => {
+
+    const router = useRouter();
+    const [navPage, setNavPage] = useState()
+
+    useEffect(() => {
+        setNavPage(router.pathname)
+    }, [])
 
     const navParentVariants = {
         initial: { opacity: 0 },
@@ -19,9 +28,9 @@ const Navbar = () => {
             <NavbarLogo />
             <motion.div className="nav__line" initial={{ scaleX: 0 }} animate={{ scaleX: 1 }} transition={{ duration: 0.5 }} style={{ originX: 0 }}></motion.div>
             <ul className="nav__links-list">
-                <Link href='/'><motion.li className="nav__home" variants={navLinkVariants}><a className="nav__link">HOME</a></motion.li></Link>
-                <Link href='/projects'><motion.li variants={navLinkVariants}><a className="nav__link">PROJECTS</a></motion.li></Link>
-                <Link href='/services'><motion.li variants={navLinkVariants}><a className="nav__link">SERVICES</a></motion.li></Link>
+                <Link href='/'><motion.li className="nav__home" variants={navLinkVariants}><a className={`nav__link ${router.pathname === '/' ? 'nav__link-selected' : ''}`}>HOME</a></motion.li></Link>
+                <Link href='/projects'><motion.li variants={navLinkVariants}><a className={`nav__link ${router.pathname === '/projects' ? 'nav__link-selected' : ''}`}>PROJECTS</a></motion.li></Link>
+                <Link href='/services'><motion.li variants={navLinkVariants}><a className={`nav__link ${router.pathname === '/services' ? 'nav__link-selected' : ''}`}>SERVICES</a></motion.li></Link>
             </ul>
         </motion.nav >
     );
