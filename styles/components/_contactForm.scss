@@ -74,7 +74,7 @@
     width: 45%;
     margin: 0 auto;
     position: absolute;
-    top: 8rem;
+    top: 30%;
     z-index: 2;
     
     input, textarea {
@@ -127,7 +127,6 @@
 @media(max-width: 850px) {
     .contact-form {
         width: 80%;
-
         top: 2em;
     }
 }

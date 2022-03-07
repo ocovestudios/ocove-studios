@@ -4,7 +4,7 @@
     margin-top: 7em;
 
     @media (min-width: 850px) {   
-        margin-top: 7rem;
+        margin-top: 17vh;
     }
 
     .services--header-container {
@@ -75,7 +75,7 @@
         .services--content {
             display: flex;
             flex-direction: column;
-            margin-bottom: 5vh;
+            margin-bottom: 4em;
             align-items: flex-end;
 
             .services--asset-container {
@@ -112,6 +112,7 @@
 
             .asset__title-2 {
                 margin-left: 0;
+                margin-right: 0;
             }
         }
     }
@@ -125,16 +126,21 @@
 
             .services--content {
                 flex-direction: row;
-                padding-bottom: 8em;
-                min-height: 60vh;
+                padding-bottom: 6em;
+                min-height: 50vh;
+                max-height: 400px;
                 overflow: visible;
                 align-items: flex-end;
+                position: relative;
+                max-width: 1200px;
+                margin: 0 auto;
 
                 .content__text {
                     display: flex;
                     flex-direction: column;
                     align-items: flex-end;
                     margin-bottom: -3em;
+                    max-width: 850px;
                 }
 
 
@@ -156,6 +162,14 @@
                     } 
                 }
 
+                .services--asset-container-2 {
+                    position: absolute;
+                    right: 0;
+                    top: calc(50% - 7em);
+                    z-index: -1;
+                    align-items: center;
+                }
+
                 .services--asset-title {
                     font-size: calc($services-subheading-fs - 0.08rem);
                     text-align: left;
@@ -168,21 +182,15 @@
                     width: max-content;
                 }
 
-                .services--asset-container-2 {
-                    position: absolute;
-                    right: 5%;
-                    z-index: -1;
-                    align-items: center;
-                    margin-right: 7.5%;
-                }
+                
 
                 .services--content-text {
-                    width: 90%;
-                    margin-left: 20%;
+                    width: 85%;
                     text-align: left;
                     font-size: 1.1rem;
                     line-height: 1.4;
                     margin-top: 2em;
+                    margin-right: 5%;
                 }
 
                 .content__text-focus {
@@ -195,16 +203,26 @@
                 }
 
                 .content__text-2 {
-                    margin-left: 1em;
-                    width: 45vw;
                     text-align: right;
+                    margin-left: 0;
+                    align-items: flex-start;
+                    width: 80%;
+
+
+                    .services--content-text {
+                        text-align: right;
+                        min-width: 600px;
+                        width: 80%;
+                        margin-right: 2.5%;
+                        margin-left: 5%;
+                    }
                 }
 
                 .asset__title-2 {
                     text-align: center;
                     border-left: none;
                     padding-left: 0;
-                    padding-right: 1em;
+                    padding-right: 0;
                     margin: 0;
                 }
             }
@@ -219,6 +237,7 @@
 
     .services__form-container {
         height: 34em;
+        min-height: 90vh;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -226,6 +245,7 @@
 
         @media(max-width: 850px) {
             height: 25em;
+            min-height: 25em;
         }
     }
 
