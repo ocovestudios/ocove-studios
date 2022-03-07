@@ -1,16 +1,23 @@
 .global__footer {
     background: $main-color;
     color: white;
-    padding: 1.2em 0;
+    padding: 1.2em 4em;
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
-    transform: translateY(4.5em);
+
+    @media(max-width: 450px) {
+        padding: 1.2em 1em;
+        flex-direction: column;
+    }
 
     .footer__info {
-        padding-left: 4em;
         display: flex;
         align-items: center;
+
+        @media(max-width: 450px) {
+            padding-bottom: 1em;
+        }
         .footer__title {
             display: flex;
             align-items: center;
@@ -31,7 +38,6 @@
     }
 
     .footer__policies {
-        margin-right: 4em;
         display: flex;
         align-items: center;
 
