@@ -7,12 +7,17 @@
         flex-direction: column;
     }
 
-    .project__back-arrow {
-        font-size: 2rem;
+    .project__close-button {
+        font-size: 1rem;
         width: fit-content;
+        margin: 0 auto;
+        position: fixed;
+        bottom: 3.5em;
+        left: 4em;
 
         &:hover {
             cursor: pointer;
+            text-decoration: underline;
         }
     }
     
@@ -44,6 +49,7 @@
         .info__links {
             display: flex;
             justify-content: space-between;
+            margin: 25% 0 0 0;
         }
 
         a {
@@ -54,6 +60,17 @@
                 text-decoration: underline;
             }
         } 
+
+        .project__visit-link {
+            padding: 0.5em 1.5em;
+            border: 2px solid $main-color;
+
+            &:hover {
+                text-decoration: none;
+                color: white;
+                background-color: $main-color;
+            }
+        }
     }
     
     .image__container {

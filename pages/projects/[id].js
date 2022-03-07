@@ -9,6 +9,7 @@ const Project = ({ projectData }) => {
     return (
         <motion.div initial={{y: 1000}} animate={{y: 0, transition:{duration: .5}}} exit={{y: 1000, transition:{duration: .5}}}>
             <div className="project__container">
+            <Link href='/projects'><motion.div initial={{opacity: 0}} animate={{opacity: 1, transition:{delay: .5, duration: .6}}} className="project__close-button">Back</motion.div></Link>
                 <div className="info__container">
                     <h2 className="project__header">{projectData.title}</h2>
                     <p className="project__description">{projectData.description}</p>
@@ -17,7 +18,7 @@ const Project = ({ projectData }) => {
                             <p className="project__credits">{projectData.credits}</p>
                             <a href={projectData.creditLink} target="_blank">{projectData.creditName}</a>
                         </div>
-                        <a href={projectData.visitLink} target="_blank">VISIT</a>
+                        <a className="project__visit-link" href={projectData.visitLink} target="_blank">VISIT</a>
                     </div>
                 </div>
                 <motion.div className="image__container" initial={{opacity: 0}} animate={{opacity: 1, transition:{delay: .5, duration: .5}}}>
