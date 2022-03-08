@@ -1,11 +1,10 @@
 import { useRef } from 'react'
 import { useGLTF } from '@react-three/drei'
-import { useFrame, useThree } from '@react-three/fiber'
+import { useFrame } from '@react-three/fiber'
 
-export default function Model(props) {
+const WebModel = (props) => {
     const group = useRef()
     const { nodes, materials } = useGLTF('/3dmodels/web_icon.glb')
-    const { gl } = useThree()
 
     useFrame(() => (group.current.rotation.y += 0.005));
 
@@ -33,3 +32,6 @@ export default function Model(props) {
 }
 
 useGLTF.preload('/3dmodels/web_icon.glb')
+
+export default WebModel;
+
