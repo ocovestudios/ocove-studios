@@ -1,14 +1,11 @@
 import { projectData } from "../../projectsData";
-import Image from "next/image";
-import Link from "next/link";
-import { useRouter } from "next/router";
-import {motion} from 'framer-motion'
+import { motion } from 'framer-motion'
 import CloseArrow from "../../components/closeprojectarrow";
 
 const Project = ({ projectData }) => {
 
     return (
-        <motion.div initial={{y: 1000}} animate={{y: 0, transition:{duration: .5}}} exit={{y: 1000, transition:{duration: .5}}}>
+        <motion.div initial={{ y: 1000 }} animate={{ y: 0, transition: { duration: .5 } }} exit={{ y: 1000, transition: { duration: .5 } }}>
             <div className="close-arrow__container"><CloseArrow /></div>
             <div className="project__container">
                 <div className="info__container">
@@ -17,17 +14,17 @@ const Project = ({ projectData }) => {
                     <div className="info__links">
                         <div className="credits__container">
                             <p className="project__credits">{projectData.credits}</p>
-                            <a href={projectData.creditLink} target="_blank">{projectData.creditName}</a>
+                            <a href={projectData.creditLink} target="_blank" rel="noreferrer">{projectData.creditName}</a>
                         </div>
-                        <a className="project__visit-link" href={projectData.visitLink} target="_blank">VISIT</a>
+                        <a className="project__visit-link" href={projectData.visitLink} target="_blank" rel="noreferrer">VISIT</a>
                     </div>
                 </div>
-                <motion.div className="image__container" initial={{opacity: 0}} animate={{opacity: 1, transition:{delay: .5, duration: .5}}}>
+                <motion.div className="image__container" initial={{ opacity: 0 }} animate={{ opacity: 1, transition: { delay: .5, duration: .5 } }}>
                     <div className="image-wrap__desktop">
-                        {projectData.desktopImages.map(img => <img className="desktop-image" src={img} alt={projectData.title} />)}
+                        {projectData.desktopImages.map((img, index) => <img className="desktop-image" src={img} alt={projectData.title} key={img + index} />)}
                     </div>
                     <div className="image-wrap__mobile">
-                        {projectData.mobileImages.map(img => <img className="mobile-image" src={img} alt={projectData.title} />)}
+                        {projectData.mobileImages.map((img, index) => <img className="mobile-image" src={img} alt={projectData.title} key={img + index} />)}
                     </div>
                 </motion.div>
             </div>
