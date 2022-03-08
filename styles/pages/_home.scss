@@ -182,6 +182,7 @@ section {
             margin: auto;
             font-size: calc($home-body-fs - 4px);
             background-color: rgba(255, 255, 255, 0.507);
+            transition: 0.2s;
 
             &:hover {
                 cursor: pointer;

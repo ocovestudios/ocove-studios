@@ -17,12 +17,12 @@ export const projectData = [
         id: 'fireside-woodcraft',
         url: '/projects/fireside-woodcraft',
         imageUrl: '/img/projects/fireside-woodcraft.jpg',
-        description: '',
+        description: 'Fireside Woodcraft is an independent woodcraft business. We worked on UI Design, website development with integrated e-commerce to increase their online reach and customer interaction.',
         credits: 'Design & Development:',
         creditName: 'Arran',
         creditLink: 'https://www.arranbaker.com',
-        visitLink: '',
-        desktopImages: [],
+        visitLink: 'https://fireside-woodcraft.vercel.app/',
+        desktopImages: ['/img/projects/fireside-woodcraft/fireside-woodcraft-1.jpg', '/img/projects/fireside-woodcraft/fireside-woodcraft-2.jpg', '/img/projects/fireside-woodcraft/fireside-woodcraft-3.jpg', '/img/projects/fireside-woodcraft/fireside-woodcraft-4.jpg'],
         mobileImages: []
     },
     {
