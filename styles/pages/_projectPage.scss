@@ -105,7 +105,9 @@
         }
 
         .image-wrap__desktop {
-
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
             .desktop-image {
                 max-width: 500px;
                 margin: 0 0 80px 0;

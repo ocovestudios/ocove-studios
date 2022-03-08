@@ -9,8 +9,16 @@ function MyApp({ Component, pageProps }) {
   const router = useRouter()
 
   useEffect(() => {
-    window.scrollTo(0, 0)
-  }, [router.pathname])
+    router.events.on('routeChangeComplete', (url) => {
+      window.scroll({
+        top: 0,
+        left: 0,
+        behavior: 'smooth',
+      });
+    })
+
+  }, [router.events])
+
 
   return (
     <>

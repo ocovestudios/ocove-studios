@@ -9,8 +9,6 @@ export default function Model(props) {
 
     useFrame(() => (group.current.rotation.y += 0.005));
 
-
-
     return (
         <group ref={group} {...props} dispose={null}>
             <group
