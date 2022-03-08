@@ -17,7 +17,7 @@ const Projects = () => {
         },
         exit: {
             opacity: 0,
-            transition: { staggerChildren: 0.1, duration: 1.5, },
+            transition: { staggerChildren: 0.1, duration: 0.7 },
         }
     }
 

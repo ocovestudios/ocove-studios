@@ -48,7 +48,7 @@ export const projectData = [
         creditName: 'Billy',
         creditLink: 'https://bmbservices.netlify.app',
         visitLink: 'https://www.isabelknowland.com',
-        desktopImages: ['/img/projects/isabel-knowland/isabel-knowland-1.png'],
+        desktopImages: ['/img/projects/isabel-knowland/isabel-knowland-1.png', '/img/projects/isabel-knowland/isabel-knowland-2.png', '/img/projects/isabel-knowland/isabel-knowland-3.png'],
         mobileImages: []
     }
 ]

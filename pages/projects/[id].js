@@ -3,13 +3,14 @@ import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/router";
 import {motion} from 'framer-motion'
+import CloseArrow from "../../components/closeprojectarrow";
 
 const Project = ({ projectData }) => {
 
     return (
         <motion.div initial={{y: 1000}} animate={{y: 0, transition:{duration: .5}}} exit={{y: 1000, transition:{duration: .5}}}>
+            <div className="close-arrow__container"><CloseArrow /></div>
             <div className="project__container">
-            <Link href='/projects'><motion.div initial={{opacity: 0}} animate={{opacity: 1, transition:{delay: .5, duration: .6}}} className="project__close-button">Back</motion.div></Link>
                 <div className="info__container">
                     <h2 className="project__header">{projectData.title}</h2>
                     <p className="project__description">{projectData.description}</p>
