@@ -46,14 +46,14 @@ const Projects = () => {
                 <title>Projects | Ocove Studios</title>
                 <meta name="viewport" content="initial-scale=1.0, width=device-width" />
             </Head>
-            
+
             <motion.div className="projects__container" variants={projectContainer} initial='initial' animate='animate' exit='exit'>
                 {projectData.map((project, projectIndex) => {
                     return (
                         <motion.div className="projects__tile" variants={projectTile} key={`projectTile-${projectIndex}`}>
-                            <Link href={project.url} passHref>
+                            <Link href={project.url} passHref scroll={false}>
                                 <motion.div className="tile__image-container">
-                                    <Image src={project.imageUrl} alt={project.title} width={600} height={400} layout='fill' />
+                                    <Image src={project.imageUrl} alt={project.title} layout='fill' />
                                 </motion.div>
                             </Link>
                             <Link href={project.url} passHref><motion.p className="tile__title">{project.title}</motion.p></Link>

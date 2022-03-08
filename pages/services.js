@@ -1,6 +1,6 @@
 import { animate, motion } from "framer-motion";
 import ContactForm from "../components/contactform";
-import { Suspense } from "react";
+import { Suspense, useEffect } from "react";
 import { Canvas } from "@react-three/fiber";
 import WebIcon from '../components/webIcon';
 import Icon3D from '../components/3dIcon';
@@ -28,7 +28,7 @@ const Services = () => {
                 <title>Services | Ocove Studios</title>
                 <meta name="viewport" content="initial-scale=1.0, width=device-width" />
             </Head>
-            <div className="services--container">
+            <motion.div className="services--container" exit={{ opacity: 0 }}>
                 <div className="services--header-container">
                     <motion.h2 className="services--header-title" initial={{ opacity: 0, y: 40 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.4 }}>What we do</motion.h2>
                     <svg width="255" height="10" viewBox="0 0 285 10" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -233,8 +233,7 @@ const Services = () => {
                         </svg>
                     </motion.div>
                 </div>
-
-            </div >
+            </motion.div >
             <Footer />
         </>
     );
