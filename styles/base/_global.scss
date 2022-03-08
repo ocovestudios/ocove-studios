@@ -1,11 +1,12 @@
 $main-color: #292929;
+$light-grey: lighten($main-color, 35%);
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     scrollbar-width: thin;
-    scrollbar-color: $main-color white;
+    scrollbar-color: $light-grey white;
 }
 
 body {
@@ -18,5 +19,5 @@ body {
 }
 
 ::-webkit-scrollbar-thumb {
-    background-color: $main-color;
+    background-color: $light-grey;
 }
