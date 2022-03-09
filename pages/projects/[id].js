@@ -36,7 +36,7 @@ export async function getStaticProps(context) {
 
     const id = context.params.id
 
-    const res = await fetch('http://ocove-deployment.vercel.app/api/projects/' + id)
+    const res = await fetch('https://www.ocove-deployment.vercel.app/api/projects/' + id)
     const projectData = await res.json()
 
     return { props: { projectData: projectData } }
