@@ -29,7 +29,6 @@ const Services = () => {
                 <title>Services | Ocove Studios</title>
                 <meta name="viewport" content="initial-scale=1.0, width=device-width" />
             </Head>
-
             <div className="services__container">
                 <div className="services__content-container">
 
@@ -58,7 +57,7 @@ const Services = () => {
                     <div className="services__content--right">
                         <div className="service__icon-container--right">
                             <div className="service__icon">
-                               <ThreeDIcon />
+                                <ThreeDIcon />
                             </div>
                             {/* <p className="service__icon-title" >3D DESIGN</p> */}
                         </div>
@@ -72,7 +71,7 @@ const Services = () => {
                     <div className="services__content--left">
                         <div className="service__icon-container--left">
                             <div className="service__icon">
-                               {/* <LogoIcon /> */}
+                                {/* <LogoIcon /> */}
                             </div>
                             {/* <p className="service__icon-title" >VISUAL IDENTITY</p> */}
                         </div>
