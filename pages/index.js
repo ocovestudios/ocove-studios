@@ -15,7 +15,6 @@ export default function Home() {
     animate: { opacity: 1, y: 0 }
   }
 
-
   const info1ParentVariants = {
     initial: { opacity: 0 },
     animate: { opacity: 1, transition: { when: "beforeChildren", staggerChildren: 0.1 } }
