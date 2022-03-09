@@ -41,8 +41,8 @@ const ContactForm = () => {
     }
 
     return (
-        <div className="form__wrapper">
-            <motion.div className="form-button__wrap" animate={buttonWrapFade}>
+        <motion.div className="form__wrapper">
+            <motion.div className="form-button__wrap" initial={{ opacity: 0, scale: 0.9 }} whileInView={{ opacity: 1, scale: 1 }} transition={{ duration: 0.6 }} viewport={{ once: true }} animate={buttonWrapFade}>
                 <motion.button className="form-button" animate={buttonControls} onClick={() => sequence()}>TALK TO US</motion.button>
                 <svg className="form-button__line" width="340" height="75" viewBox="0 0 340 75" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <motion.rect className="form-button__stroke" animate={buttonLineControls} x="1" y="1" width="338" height="72" fill="none" stroke="#323232" stroke-width="2" />
@@ -59,7 +59,7 @@ const ContactForm = () => {
                 <motion.div className="horizontal-line" variants={lineVariants} animate={formLine3Controls} initial="initial"></motion.div>
                 <motion.button animate={formButtonFade} initial={{ opacity: 0 }} className='contact__form-submit'>SEND</motion.button>
             </motion.form>
-        </div>
+        </motion.div>
     );
 }
 
