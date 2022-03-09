@@ -68,7 +68,7 @@ const Services = () => {
                     </div>
 
                     <div className="services__content--left">
-                        <motion.div className="service__icon-container--left">
+                        <motion.div className="service__icon-container--left"  variants={servicesIconFade} initial="initial" whileInView={"animate"} viewport={{ once: true }}>
                             <div className="service__icon">
                                 <LogoIcon />
                             </div>
@@ -130,7 +130,6 @@ const Services = () => {
                     </ul>
                     <motion.div className="contact-logo-wrapper" initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{ ease: 'easeOut', duration: 2 }} viewport={{ once: true }}>
                         <LogoSVG />
-
                     </motion.div>
                 </div>
             </div>
