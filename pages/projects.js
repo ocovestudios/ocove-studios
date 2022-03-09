@@ -51,7 +51,7 @@ const Projects = () => {
                 {projectData.map((project, projectIndex) => {
                     return (
                         <motion.div className="projects__tile" variants={projectTile} key={`projectTile-${projectIndex}`}>
-                            <Link href={project.url} passHref scroll={false}>
+                            <Link href={project.url} passHref>
                                 <motion.div className="tile__image-container">
                                     <Image src={project.imageUrl} alt={project.title} layout='fill' />
                                 </motion.div>

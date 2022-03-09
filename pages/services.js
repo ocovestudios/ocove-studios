@@ -28,7 +28,6 @@ const Services = () => {
                 <title>Services | Ocove Studios</title>
                 <meta name="viewport" content="initial-scale=1.0, width=device-width" />
             </Head>
-
             <div className="services__container">
                 <div className="services__content-container">
 

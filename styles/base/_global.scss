@@ -9,6 +9,10 @@ $light-grey: lighten($main-color, 35%);
     scrollbar-color: $light-grey white;
 }
 
+html, body {
+    scroll-behavior: smooth;
+}
+
 body {
     color: $main-color;
     overflow-x: hidden;
