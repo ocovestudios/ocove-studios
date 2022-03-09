@@ -8,18 +8,6 @@ function MyApp({ Component, pageProps }) {
 
   const router = useRouter()
 
-  useEffect(() => {
-    router.events.on('routeChangeComplete', (url) => {
-      window.scroll({
-        top: 0,
-        left: 0,
-        behavior: 'smooth',
-      });
-    })
-
-  }, [router.events])
-
-
   return (
     <>
       <Navbar />

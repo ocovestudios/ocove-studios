@@ -17,9 +17,9 @@ const Footer = () => {
             </div>
             <div className="footer__policies">
                 <ul>
-                    <Link href='/privacyPolicy' passHref scroll={false}><li className="footer__policy-link">Privacy Policy</li></Link>
+                    <Link href='/privacyPolicy' passHref><li className="footer__policy-link">Privacy Policy</li></Link>
                     <li style={{ display: 'inline-block', marginLeft: '1em' }}>|</li>
-                    <Link href='/cookiePolicy' passHref scroll={false}><li className="footer__policy-link">Cookie Policy</li></Link>
+                    <Link href='/cookiePolicy' passHref><li className="footer__policy-link">Cookie Policy</li></Link>
                 </ul>
             </div>
         </footer>

@@ -119,7 +119,7 @@ export default function Home() {
             <motion.div className="particle-container" variants={info2RightVariants}>
               <HomeParticles />
             </motion.div>
-            <Link href='/projects' scroll={false} passHref><motion.button className="view-projects-button" variants={info2RightVariants}> SEE OUR WORK </motion.button></Link>
+            <Link href='/projects' passHref><motion.button className="view-projects-button" variants={info2RightVariants}> SEE OUR WORK </motion.button></Link>
           </motion.div>
         </section>
         <Footer />
