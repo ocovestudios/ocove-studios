@@ -1,6 +1,9 @@
 .home__container {
-    min-height: 100vh;
     height: auto;
+
+    @media(max-width: 650px) {
+        padding-bottom: 2em;
+    }
 }
 
 section {
@@ -115,7 +118,7 @@ section {
 }
 
 .home3 {
-    margin-bottom: calc(10em - 8vh);
+    margin-bottom: calc(6em);
     display: flex;
     align-items: flex-start;
     margin-top: 8%;
@@ -123,7 +126,7 @@ section {
     @media(min-height: 750px) {
         height: auto;
         min-height: 50vh;
-        margin-bottom: 22vh;
+        margin-bottom: 10em;
     }
     
 
@@ -136,13 +139,15 @@ section {
 
     @media(max-width: 650px) {
         margin-bottom: 8em;
+        margin: 0 auto;
+        width: 90%;
     }
 
     .home3__left, .home3__right {
-        width: 50%;
+        width: 100%;
         display: flex;
         flex-direction: column;
-        justify-content: center;
+        height: auto;
 
         @media(max-width: 900px) {
             width: 100%;
@@ -181,7 +186,8 @@ section {
             height: 400px;
 
             @media(max-width: 650px) {
-                height: 350px
+                height: 300px;
+                margin-top: 6em;
             }
         }
 
@@ -193,14 +199,16 @@ section {
             font-size: calc($home-body-fs - 4px);
             background-color: rgba(255, 255, 255, 0.507);
             transition: 0.2s;
-            margin-top: 8vh;
 
-            @media(min-height: 800px) {
-                margin-top: 20vh;
+            @media(min-height: 750px) {
+                margin-top: 6em;
+                margin-bottom: 4em;
             }
 
-            @media(min-height: 750px) and (max-width: 850px) {
-                margin-top: 0;
+            @media(max-width: 550px) {
+                margin: 0 auto;
+                width: 90%;
+                margin-bottom: 10em;
             }
 
             &:hover {

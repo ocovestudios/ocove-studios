@@ -121,8 +121,9 @@ export default function Home() {
             <Link href='/projects' passHref><motion.button className="view-projects-button" variants={info2RightVariants}> SEE OUR WORK </motion.button></Link>
           </motion.div>
         </section>
-        <Footer />
+
       </motion.div>
+      <Footer />
     </>
   )
 }
