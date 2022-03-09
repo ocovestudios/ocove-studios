@@ -4,21 +4,21 @@ import { useFrame } from '@react-three/fiber'
 
 const LogoModel = (props) => {
   const group = useRef();
-  const { nodes, materials } = useGLTF("/logo.glb");
+  const { nodes, materials } = useGLTF("/3dmodels/logoV2.glb");
   useFrame(() => (group.current.rotation.y += 0.005));
   return (
-    <group ref={group} {...props} dispose={null}>
+    <group ref={group} {...props} dispose={null} scale={[1.8, 1.8, 1.8]}>
       <mesh
         castShadow
         receiveShadow
-        geometry={nodes.geometry}
-        material={materials["Material.002"]}
+        geometry={nodes.Curve001.geometry}
+        material={materials["Material.001"]}
         rotation={[Math.PI / 2, 0, 0]}
       />
     </group>
   );
 }
 
-useGLTF.preload('3dmodels/logo.glb')
-
 export default LogoModel;
+
+useGLTF.preload("/3dmodels/logoV2.glb");

@@ -24,7 +24,7 @@ const Navbar = () => {
             <ul className="nav__links-list">
                 <Link href='/' passHref ><motion.li className="nav__home" variants={navLinkVariants}><a className={`nav__link ${router.pathname === '/' ? 'nav__link-selected' : ''}`}>HOME</a></motion.li></Link>
                 <Link href='/projects' passHref ><motion.li variants={navLinkVariants}><a className={`nav__link ${router.pathname === '/projects' ? 'nav__link-selected' : ''}`}>PROJECTS</a></motion.li></Link>
-                <Link href='/services' passHref><motion.li variants={navLinkVariants}><a className={`nav__link ${router.pathname === '/services' ? 'nav__link-selected' : ''}`}>SERVICES</a></motion.li></Link>
+                <Link href='/services' passHref ><motion.li variants={navLinkVariants}><a className={`nav__link ${router.pathname === '/services' ? 'nav__link-selected' : ''}`}>SERVICES</a></motion.li></Link>
             </ul>
         </motion.nav >
     );
