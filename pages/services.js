@@ -71,7 +71,7 @@ const Services = () => {
                     <div className="services__content--left">
                         <div className="service__icon-container--left">
                             <div className="service__icon">
-                                {/* <LogoIcon /> */}
+                                <LogoIcon />
                             </div>
                             {/* <p className="service__icon-title" >VISUAL IDENTITY</p> */}
                         </div>
@@ -134,13 +134,7 @@ const Services = () => {
 
                     </motion.div>
                 </div>
-
             </div>
-
-
-
-
-
             <Footer />
         </>
     );

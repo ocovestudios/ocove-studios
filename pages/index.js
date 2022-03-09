@@ -65,7 +65,7 @@ export default function Home() {
         <title>Home | Ocove Studios</title>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       </Head>
-      <motion.div exit={{ opacity: 0 }}>
+      <motion.div className='home__container' exit={{ opacity: 0 }}>
         <motion.div className="three-background" initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 1 }} ref={e => threeContainer.current = e}></motion.div>
         <section className="home1">
           <BrandName />
