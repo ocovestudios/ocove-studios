@@ -53,7 +53,7 @@ const Projects = () => {
                         <motion.div className="projects__tile" variants={projectTile} key={`projectTile-${projectIndex}`}>
                             <Link href={project.url} passHref>
                                 <motion.div className="tile__image-container">
-                                    <Image src={project.imageUrl} alt={project.title} layout='fill' />
+                                    <Image src={project.imageUrl} alt={project.title} width="1500" height="844" layout='intrinsic' />
                                 </motion.div>
                             </Link>
                             <Link href={project.url} passHref><motion.p className="tile__title">{project.title}</motion.p></Link>
