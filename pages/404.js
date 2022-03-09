@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { useFramerMotion } from "../lib/useFramerMotion";
 import Head from 'next/head';
+import Footer from "../components/footer";
 
 const Error = () => {
 
@@ -15,6 +16,7 @@ const Error = () => {
             <div style={{ height: '100vh', display: 'grid', placeItems: 'center' }}>
                 <motion.h2 variants={Fade} initial='initial' animate='animate'>404  <span style={{ marginLeft: '1em' }}>|</span><span style={{ marginLeft: '1em', fontWeight: 100 }}>This page could not be found.</span></motion.h2>
             </div >
+            <Footer />
         </>
     );
 }
