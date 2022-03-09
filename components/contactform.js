@@ -37,7 +37,7 @@ const ContactForm = () => {
         await formInput1Controls.start("animate")
         await formInput2Controls.start("animate")
         await formInput3Controls.start("animate")
-        return await formButtonFade.start({ opacity: 1 })
+        return await formButtonFade.start({ opacity: 1, transition: { duration: .1, delay: .1} })
     }
 
     return (

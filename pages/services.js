@@ -68,7 +68,7 @@ const Services = () => {
                     </div>
 
                     <div className="services__content--left">
-                        <motion.div className="service__icon-container--left"  variants={servicesIconFade} initial="initial" whileInView={"animate"} viewport={{ once: true }}>
+                        <motion.div className="service__icon-container--left" variants={servicesIconFade} initial="initial" whileInView={"animate"} viewport={{ once: true }}>
                             <div className="service__icon">
                                 <LogoIcon />
                             </div>
