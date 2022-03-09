@@ -1,9 +1,9 @@
 import { motion } from 'framer-motion'
 import { useFramerMotion } from "../lib/useFramerMotion";
 
-const { Fade } = useFramerMotion()
-
 const BrandName = () => {
+
+    const { Fade } = useFramerMotion()
 
     return (
         <motion.div className="brand-name" variants={Fade} initial='initial' animate='animate'>
