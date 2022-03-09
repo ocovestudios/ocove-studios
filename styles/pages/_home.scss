@@ -22,7 +22,6 @@ section {
     display: flex;
     justify-items: center;
     align-content: center;
-    min-width: 350px;
 }
 
 .home1__footer {
@@ -140,6 +139,8 @@ section {
 
     @media(max-width: 650px) {
         margin-bottom: 8em;
+        margin: 0 auto;
+        width: 90%;
     }
 
     .home3__left, .home3__right {
@@ -205,8 +206,9 @@ section {
             }
 
             @media(max-width: 550px) {
-                margin: 0;
-                width: 98%;
+                margin: 0 auto;
+                width: 90%;
+                margin-bottom: 10em;
             }
 
             &:hover {
