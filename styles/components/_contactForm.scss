@@ -71,7 +71,7 @@
 .contact-form {
     display: none;
     flex-direction: column;
-    width: 45%;
+    width: 55%;
     margin: 0 auto;
     position: absolute;
     top: 30%;
@@ -85,7 +85,7 @@
         margin: 3px 0;
         background-color: transparent;
         scrollbar-width: thin;
-        font-size: $services-subheading-fs;
+        font-size: calc($services-body-fs + 0.28rem);
 
         //animated 
         opacity: 0;

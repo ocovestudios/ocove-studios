@@ -1,248 +1,115 @@
-.services--container {
-    width: 100%;
-    margin: 0 auto;
-    margin-top: 7em;
+.services__container {
+    max-width: 1350px;
+    width: 80%;
+    margin: 7em auto 0 auto;
 
-    @media (min-width: 850px) {   
+    @media (max-width: 850px) {   
         margin-top: 17vh;
+        width: 95%;
     }
 
-    .services--header-container {
-        display: flex;
-        align-items: center;
-        width: 85%;
-        margin: 0 auto;
+    .services__content-container {
+        margin: 0 0 0 0;
 
-        .services--header-title {
-            font-weight: 400;
-            font-size: 1.4rem;
-            width: fit-content;
-            letter-spacing: 1px;
-            margin-right: 1rem;
-        }
-
-        .services--contact-title {
-            text-align: right;
-            width: fit-content;
-            margin-left: 1rem;
-        }
-
-        svg {
-            width: 45%;
-            margin: 0 auto;
-        }
-
-        @media (min-width: 850px) {
-            .services--header-title {
-                font-size: 2rem;
-                margin-right: 3rem;
-                width: fit-content;
-                margin-left: 10%;
-            } 
-            
-            .services--contact-title {
-                margin-left: 2rem;
-                margin-right: 10%;
-            }
-
-            svg {
-                margin-left: 0;
-                width: auto;
-            }
-        }
-    }
-
-    @media(min-width: 850px) {
-        .services--header-container {
-            width: 100%;
-        }
-        
-    }
-
-    @media(min-width: 850px) {
-        .services--contact-header{
-            justify-content: flex-end;
-            position: relative;
-        }
-    }
-
-    .services--content-container {
-        width: 85%;
-        margin: 0 auto;
-        margin-top: 2em;
-        margin-bottom: 0em;
-
-        .services--content {
+        .services__header-container {
             display: flex;
-            flex-direction: column;
-            margin-bottom: 4em;
+            align-items: center;
+            width: 85%;
+            margin: 0 auto 1em 0;
+            font-size: clamp(1.8rem, 3vw, 2.8rem);
+
+            @media(max-width: 750px) {
+                margin: 2em auto;
+            }
+        }
+
+        .services__title--left {
+            margin: 0 1em 0 0;
+        }
+
+        .services__content--left {
+            margin: 2em auto 0 2em;
+            width: 90%;
+            display: flex;
+            flex-direction: row;
+            align-items: flex-start;
+            justify-content: space-between;
+
+            @media(max-width: 750px) {
+                margin: 2em auto 7em auto;
+            }
+        }
+
+        .services__content--right {
+            margin: 2em 2em 0 auto;
+            width: 90%;
+            display: flex;
+            flex-direction: row-reverse;
             align-items: flex-end;
 
-            .services--asset-container {
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                width: fit-content;
+            @media(max-width: 750px) {
+                margin: 2em auto 7em auto;
+            }
+        }
 
-                .services--asset {
-                    width: 35vw;
-                    height: 35vw;
-                    overflow: visible;
-                    margin-left: 10%;
-                } 
+        .service__icon-container--left {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin: 0 4em 0 0;
+
+            @media(max-width: 750px) {
+                margin: 0 5% 0 0;
+            }
+        }
+
+        .service__icon-container--right {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin: 0 0 0 4em;
+
+            @media(max-width: 750px) {
+                margin: 0 5% 0 0;
+            }
+        }
+
+        .service__icon {
+            width: clamp(150px, 30vw, 700px);
+            height: clamp(150px, 30vw, 700px);
+
+        }
+
+        .service__icon-title {
+            font-size: $services-subheading-fs;
+        }
+
+        .service__text-wrap {
+            margin: auto 0;
+            width: 70%;
+
+            .service__text-focus {
+                font-size: calc($services-body-fs + 0.7rem);
+                margin: 0 0 2em 0;
             }
 
-            .services--asset-title {
-                margin: 0 auto;
-                font-size: 1.1rem;
-                margin-top: 0.5rem;
-                font-family: $main-font;
-                margin-bottom: 2rem;
-                text-align: center;
-                letter-spacing: 1px;
-                font-weight: 100;
-            }
-
-            .services--content-text {
-                width: 80%;
-                font-size: 1rem;
-                margin-top: 1rem;
-                font-family: $main-font;
-            }
-
-            .asset__title-2 {
-                margin-left: 0;
-                margin-right: 0;
+            .service__text {
+                font-size: $services-body-fs;
             }
         }
     }
-
-    @media (min-width: 850px) {
-        .services--content-container {
-            width: 70%;
-            overflow: visible;
-            margin-bottom: 0;
-            margin-top: 1em;
-
-            .services--content {
-                flex-direction: row;
-                padding-bottom: 6em;
-                min-height: 50vh;
-                max-height: 400px;
-                overflow: visible;
-                align-items: center;
-                position: relative;
-                max-width: 1200px;
-                margin: 0 auto;
-
-                .content__text {
-                    display: flex;
-                    flex-direction: column;
-                    align-items: flex-end;
-                    max-width: 850px;
-                }
-
-
-                .services--asset-container {
-                    display: flex;
-                    align-items: flex-start;
-                    overflow: visible;
-                    position: relative;
-                    width: fit-content;
-
-                    .services--asset {
-                        width: 275px;
-                        height: 350px;
-                        overflow: visible;
-                        margin: 0;
-                        margin-top: 1em;
-                        min-width: 200px;
-                        min-height: 200px;
-                    } 
-                }
-
-                .services--asset-container-2 {
-                    position: absolute;
-                    right: 0;
-                   
-                    z-index: -1;
-                    align-items: center;
-                }
-
-                .services--asset-title {
-                    font-size: calc($services-subheading-fs - 0.08rem);
-                    text-align: left;
-                    margin-top: 1em;
-                    font-family: $main-font;
-                    font-weight: 100;
-                    text-align: left;
-                    padding-left: 1em;
-                    margin: 0 auto;
-                    width: max-content;
-                    margin-top: -1.5em;
-                }
-
-                
-
-                .services--content-text {
-                    width: 85%;
-                    text-align: left;
-                    font-size: 1.1rem;
-                    line-height: 1.4;
-                    margin-top: 2em;
-                    margin-right: 5%;
-                }
-
-                .content__text-focus {
-                    font-style: italic;
-                    font-size: 1.7rem;
-
-                    span {
-                        font-style: normal;
-                    }
-                }
-
-                .content__text-2 {
-                    text-align: right;
-                    margin-left: 0;
-                    align-items: flex-start;
-                    width: 80%;
-
-
-                    .services--content-text {
-                        text-align: right;
-                        min-width: 600px;
-                        width: 80%;
-                        margin-right: 2.5%;
-                        margin-left: 5%;
-                    }
-                }
-
-                .asset__title-2 {
-                    text-align: center;
-                    border-left: none;
-                    padding-left: 0;
-                    padding-right: 0;
-                    margin: 0;
-                }
-            }
-            
-            .services__content-3 {
-                margin-bottom: -4em;
-            }
-        }   
-    }
-
-    //Form, Section
 
     .services__form-container {
         height: 34em;
+        width: 100%;
         min-height: 90vh;
         display: flex;
         align-items: center;
         justify-content: center;
         background: white;
-
+        
         @media(max-width: 850px) {
             height: 25em;
             min-height: 25em;
@@ -250,14 +117,23 @@
         }
     }
 
-    //Contact Section
-
     .services__contact-container {
-        margin: 0 auto;
-        margin-bottom: 0;;
+        margin: 4em 0 12em 0;
         position: relative;
-        width: 80%;
-        min-height: 60vh;
+
+        .services__header-container {
+            display: flex;
+            flex-direction: row-reverse;
+            align-items: center;
+            justify-content: end;
+            width: 85%;
+            margin: 0 0 0 auto;
+            font-size: clamp(1.8rem, 3vw, 2.8rem);
+        }
+
+        .services__title--left {
+            margin: 0 0 0 1em;
+        }
 
         .contact__list {
             margin-top: 4em;
@@ -271,7 +147,7 @@
                 align-items: center;
 
                 .contact__name {
-                    font-size: 1.1rem;
+                    font-size: 1.7rem;
                     padding: 2rem 0;
                     margin-right: 2rem;
                     transition: 0.3s;
@@ -302,14 +178,13 @@
                     &::after {
                         content: '';
                         width: 0;
-                        border-radius: 50px;
                         background: $main-color;
                         height: 3px;
                         display: block;
                         position: absolute;
                         left: 0;
                         bottom: -5px;
-                        transition: 0.3s ease-out;
+                        transition: 0.15s ease-out;
                     }
 
                     &:hover::after {
@@ -322,19 +197,6 @@
                         &:hover {
                             cursor: pointer; 
                         }                        
-                    }
-
-                    .contact__image-blur {
-                        height: 2rem;
-                        transition: 0.8s;
-                        transition-delay: 0.5s;
-                        filter: blur(0.8px);
-                        position: absolute;
-    
-                        &:hover {
-                            cursor: pointer;
-                            filter: blur(0);
-                        }
                     }
 
                     .contact__image {
@@ -353,7 +215,7 @@
 
         .contact__background {
             position: absolute;
-            top: 10vh;
+            top: 10%;
             right: -12vw;
             z-index: -1;
             transition: 0.3s;
@@ -362,72 +224,7 @@
                 width: 100vw;
             }
 
-            &:hover {
-                filter: blur(1px);
-            }
         }
     }
 
-    @media(min-width: 850px) {
-        .services__contact-container {
-            display: flex;
-            align-items: center;
-            position: relative;
-            margin-bottom: 9em;
-            
-            .contact__list {
-                width: 77%;
-
-                .contact__list-item {
-                    margin: 2rem 0;
-                    position: relative;
-
-                    .contact__name {
-                        padding: 1rem;
-                        transition: 0.8s;
-                        font-size: 1.7rem;
-                    }
-
-                }
-            }
-        }
-    }
-
-    @media(min-width: 850px) {
-        .contact__message {
-            text-align: left;
-            font-size: 4rem;
-            margin-left: 15%;
-            margin-bottom: 1em;
-
-            .contact__highlight {
-                text-decoration-thickness: 5px;
-            }
-
-            .contact__globe {
-                width: 20%;
-                height: 20%;
-                border-radius: 50%;
-                margin: 0;
-            }
-        }
-    }
-
-    .contact__globe {
-        z-index: 2;
-        width: 70%;
-        margin-left: 10%;
-        margin: 2em 0;
-        position: absolute;
-        left: 15%;
-        padding-bottom: 4em;
-    }
-
-    @media(min-width: 850px) {
-        .contact__globe {
-            display: none;
-        }
-
-    }
 }
-
