@@ -11,16 +11,15 @@ import LogoIcon from "../components/3DIcons/LogoIcon";
 
 const Services = () => {
 
-    const servicesAssetFade = {
+    const servicesIconFade = {
         initial: { opacity: 0 },
-        animate: { opacity: 1, transition: { duration: .6, delay: .8 } },
+        animate: { opacity: 1, transition: { duration: .5, delay: .4 } },
 
     }
 
     const servicesTextFade = {
         initial: { opacity: 0 },
-        animate: { opacity: 1, transition: { duration: .6, delay: 1.2 } },
-
+        animate: { opacity: 1, transition: { duration: .5, delay: .6 } },
     }
 
     return (
@@ -33,7 +32,7 @@ const Services = () => {
                 <div className="services__content-container">
 
                     <div className="services__header-container">
-                        <motion.p className="services__title--left" initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: .2 }}>What we do</motion.p>
+                        <motion.p className="services__title--left" initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: .1 }}>What we do</motion.p>
                         <svg width="255" height="10" viewBox="0 0 285 10" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <motion.line y1="-1" x2="276.27" y2="-1" transform="matrix(1 0 0 -1 0 4)" stroke="#292929" strokeWidth="2" initial={{ x2: 0, opacity: 0 }} animate={{ x2: 276.27, opacity: 1, }} transition={{ duration: .4, ease: 'easeOut', delay: .5 }} viewport={{ once: true }} />
                             <motion.rect width="10" height="10" transform="matrix(1 0 0 -1 275 10)" fill="#292929" initial={{ x: 0, opacity: 0 }} animate={{ x: 276.27, opacity: 1 }} transition={{ duration: .4, ease: 'easeOut', delay: .5 }} viewport={{ once: true }} />
@@ -41,45 +40,45 @@ const Services = () => {
                     </div>
 
                     <div className="services__content--left">
-                        <div className="service__icon-container--left">
+                        <motion.div className="service__icon-container--left" variants={servicesIconFade} initial="initial" animate="animate">
                             <div className="service__icon">
                                 <WebIcon />
                             </div>
-                            {/* <p className="service__icon-title" >WEB DEVELOPMENT</p> */}
-                        </div>
-                        <div className="service__text-wrap">
+                            <p className="service__icon-title" >WEB DEVELOPMENT</p>
+                        </motion.div>
+                        <motion.div className="service__text-wrap" variants={servicesTextFade} initial="initial" animate="animate">
                             <p className="service__text-focus">Modern web development and creative design</p>
                             <p className="service__text"> We like to work with code. Whatever the project we develop an approach to meet your vision,
                                 combining cutting-edge technologies with clean aesthetics to ensure you make the best impression.</p>
-                        </div>
+                        </motion.div>
                     </div>
 
                     <div className="services__content--right">
-                        <div className="service__icon-container--right">
+                        <motion.div className="service__icon-container--right" variants={servicesIconFade} initial="initial" whileInView={"animate"} viewport={{ once: true }}>
                             <div className="service__icon">
                                 <ThreeDIcon />
                             </div>
-                            {/* <p className="service__icon-title" >3D DESIGN</p> */}
-                        </div>
-                        <div className="service__text-wrap">
+                            <p className="service__icon-title" >3D DESIGN</p>
+                        </motion.div>
+                        <motion.div className="service__text-wrap" variants={servicesTextFade} initial="initial" whileInView={"animate"} viewport={{ once: true }}>
                             <p className="service__text-focus">3D modelling and asset creation</p>
                             <p className="service__text">We make custom assets in house, using the latest 2D and 3D software to
                                 produce bespoke icons, models and scenes unique to your brand.</p>
-                        </div>
+                        </motion.div>
                     </div>
 
                     <div className="services__content--left">
-                        <div className="service__icon-container--left">
+                        <motion.div className="service__icon-container--left">
                             <div className="service__icon">
                                 <LogoIcon />
                             </div>
-                            {/* <p className="service__icon-title" >VISUAL IDENTITY</p> */}
-                        </div>
-                        <div className="service__text-wrap">
+                            <p className="service__icon-title" >VISUAL IDENTITY</p>
+                        </motion.div>
+                        <motion.div className="service__text-wrap" variants={servicesTextFade} initial="initial" whileInView={"animate"} viewport={{ once: true }}>
                             <p className="service__text-focus">Crafting digital spaces</p>
                             <p className="service__text">We work closely with people to grow their visual recognition, helping them forge a deeper connection with their audiences and
                                 customers. We carefully consider your requirements and integrate your message throughout the design and development process.</p>
-                        </div>
+                        </motion.div>
                     </div>
                 </div>
                 <div className="services__form-container">
