@@ -250,6 +250,7 @@
                         height: 2rem;
                         transition: 0.9s;
                         transition-delay: 0.8s;
+                        user-select: none;
 
                         &:hover {
                             cursor: pointer;

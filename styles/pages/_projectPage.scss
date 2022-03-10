@@ -80,6 +80,7 @@
             padding: 8px 25px;
             border: 2px solid $main-color;
             transition: 0.2s;
+            user-select: none;
 
             &:hover {
                 text-decoration: none;
