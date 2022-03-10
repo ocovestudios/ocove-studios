@@ -71,7 +71,7 @@ export default function Home() {
           <motion.div className="home1__footer" variants={footerParentVariants} initial="initial" animate="animate">
             <motion.p>CREATIVE DIGITAL SERVICES</motion.p>
             <div className="footer__contact-button-wrapper">
-              <motion.a className="footer__contact-button" animate={contactButtonControls} initial={{ opacity: 0, x: 27 }} href="mailto:someone@yoursite.com">CONTACT</motion.a>
+              <motion.a className="footer__contact-button" animate={contactButtonControls} initial={{ opacity: 0, x: 27 }} href="mailto:ocovestudios@gmail.com">CONTACT</motion.a>
               <motion.button className="footer__reveal-contact-button" animate={revealButtonControls} onClick={() => sequence()}>+</motion.button>
             </div>
           </motion.div>

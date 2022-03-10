@@ -10,7 +10,7 @@ const Footer = () => {
                     <p>© {new Date().getFullYear()}</p>
                 </div>
                 <div className="footer__email">
-                    <p>ocovestudios@gmail.com</p>
+                    <a href="mailto:ocovestudios@gmail.com">ocovestudios@gmail.com</a>
                 </div>
             </div>
             <div className="footer__links">
