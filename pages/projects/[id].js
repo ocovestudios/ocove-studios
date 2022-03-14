@@ -14,17 +14,17 @@ const Project = ({ project }) => {
                     <div className="info__links">
                         <div className="credits__container">
                             <p className="project__credits">{project.credits}</p>
-                            <a href={projectData.creditLink} target="_blank" rel="noreferrer">{project.creditName}</a>
+                            <a href={project.creditLink} target="_blank" rel="noreferrer">{project.creditName}</a>
                         </div>
                         <a className="project__visit-link" href={project.visitLink} target="_blank" rel="noreferrer">VISIT</a>
                     </div>
                 </div>
                 <motion.div className="image__container" initial={{ opacity: 0 }} animate={{ opacity: 1, transition: { delay: .5, duration: .5 } }}>
                     <div className="image-wrap__desktop">
-                        {project.desktopImages.map((img, index) => <img className="desktop-image" src={img} alt={projectData.title} key={img + index} />)}
+                        {project.desktopImages.map((img, index) => <img className="desktop-image" src={img} alt={project.title} key={img + index} />)}
                     </div>
                     <div className="image-wrap__mobile">
-                        {project.mobileImages.map((img, index) => <img className="mobile-image" src={img} alt={projectData.title} key={img + index} />)}
+                        {project.mobileImages.map((img, index) => <img className="mobile-image" src={img} alt={project.title} key={img + index} />)}
                     </div>
                 </motion.div>
             </div>
