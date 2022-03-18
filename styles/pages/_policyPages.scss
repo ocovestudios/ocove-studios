@@ -5,8 +5,17 @@
     margin-left: 15%;
     margin-bottom: 6em;
 
+    @media(max-width: 750px) { 
+        margin: 20vh 0 0 0
+    }
+
     .policy__page-title {
         font-size: 4rem;
+
+        @media(max-width: 750px) { 
+            margin: 0 0 0 11%;
+            font-size: 2.6rem;
+        }
     }
 
     .policy__page-text {
@@ -14,5 +23,11 @@
         font-size: 1.2rem;
         margin-top: 4em;
         width: 60%;
+
+        @media(max-width: 750px) {
+            width: 70%;
+            margin: 4em auto 0 12%;
+            font-size: calc($services-body-fs - 0.1rem)
+        }
     }
 }

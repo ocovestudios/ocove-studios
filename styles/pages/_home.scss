@@ -186,13 +186,21 @@ section {
         
         .particle-container {
             height: 400px;
+            padding: 0 0 20% 0;
 
             @media(max-width: 900px) {
-                margin: 20% 0 20% 0;
+                width: 85%;
+                margin: 20% auto 20% auto;
+                padding: 0 0 0 0;
             }
 
             @media(max-width: 650px) {
+                width: 95%;
                 height: 300px;
+            }
+        
+            #tsparticles {
+                height: 100%;
             }
         }
 
@@ -205,9 +213,9 @@ section {
             background-color: rgba(255, 255, 255, 0.507);
             transition: 0.2s;
 
-            @media(min-height: 750px) {
-                margin-top: 6em;
-            }
+            // @media(min-height: 750px) {
+            //     margin-top: 6em;
+            // }
 
             @media(max-width: 550px) {
                 margin: 0 auto;
