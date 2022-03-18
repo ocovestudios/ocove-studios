@@ -1,5 +1,6 @@
 .home__container {
-    height: auto;
+    height: fit-content;
+    margin: 0 0 10em 0;
 
     @media(max-width: 900px) {
         padding-bottom: 2em;
@@ -123,6 +124,8 @@ section {
     display: flex;
     align-items: flex-start;
     margin-top: 8%;
+    height: fit-content;
+
 
     @media(min-height: 750px) {
         height: auto;
@@ -184,9 +187,12 @@ section {
         .particle-container {
             height: 400px;
 
+            @media(max-width: 900px) {
+                margin: 20% 0 20% 0;
+            }
+
             @media(max-width: 650px) {
                 height: 300px;
-                margin-top: 6em;
             }
         }
 
@@ -201,13 +207,11 @@ section {
 
             @media(min-height: 750px) {
                 margin-top: 6em;
-                margin-bottom: 4em;
             }
 
             @media(max-width: 550px) {
                 margin: 0 auto;
                 width: 90%;
-                margin-bottom: 10em;
             }
 
             &:hover {
@@ -221,11 +225,6 @@ section {
     .home3__right {
         @media(max-width: 900px) {
             width: 100%;
-            margin-top: 8em;
-        }
-
-        @media(max-width: 650px) {
-            margin-top: 2em;
         }
     }
 }
