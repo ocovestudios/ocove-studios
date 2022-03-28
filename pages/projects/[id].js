@@ -1,10 +1,16 @@
 import { projectData } from "../../projectsData";
 import { motion } from 'framer-motion'
 import CloseArrow from "../../components/closeprojectarrow";
+import Head from "next/head";
 
 const Project = ({ project }) => {
 
     return (
+        <>
+        <Head>
+        <title>{project.title} | Ocove Studios</title>
+        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+      </Head>
         <motion.div initial={{ y: 1000 }} animate={{ y: 0, transition: { duration: .5 } }} exit={{ y: 1000, transition: { duration: .5 } }}>
             <div className="close-arrow__container"><CloseArrow /></div>
             <div className="project__container">
@@ -29,6 +35,7 @@ const Project = ({ project }) => {
                 </motion.div>
             </div>
         </motion.div>
+        </>
     );
 }
 
