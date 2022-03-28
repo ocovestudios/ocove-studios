@@ -9,8 +9,8 @@ export const projectData = [
         creditName: 'Matt',
         creditLink: 'https://mattcongdon.info',
         visitLink: 'https://autonomia.ac',
-        desktopImages: ['/img/projects/autonomics/autonomics-desktop.png'],
-        mobileImages: ['/img/projects/autonomics/autonomics-mobile.png', '/img/projects/autonomics/autonomics-mobile-2.png']
+        desktopImages: ['/img/projects/autonomics/autonomics-desktop.webp'],
+        mobileImages: ['/img/projects/autonomics/autonomics-mobile.webp', '/img/projects/autonomics/autonomics-mobile-2.webp']
     },
     {
         title: 'Fireside Woodcraft',
@@ -22,7 +22,7 @@ export const projectData = [
         creditName: 'Arran',
         creditLink: 'https://www.arranbaker.com',
         visitLink: 'https://fireside-woodcraft.vercel.app/',
-        desktopImages: ['/img/projects/fireside-woodcraft/fireside-woodcraft-1.jpg', '/img/projects/fireside-woodcraft/fireside-woodcraft-2.jpg', '/img/projects/fireside-woodcraft/fireside-woodcraft-3.jpg', '/img/projects/fireside-woodcraft/fireside-woodcraft-4.jpg'],
+        desktopImages: ['/img/projects/fireside-woodcraft/fireside-woodcraft-1.webp', '/img/projects/fireside-woodcraft/fireside-woodcraft-2.webp', '/img/projects/fireside-woodcraft/fireside-woodcraft-3.webp', '/img/projects/fireside-woodcraft/fireside-woodcraft-4.webp'],
         mobileImages: []
     },
     {
@@ -35,7 +35,7 @@ export const projectData = [
         creditName: 'Billy',
         creditLink: 'https://bmbservices.netlify.app',
         visitLink: 'https://www.helenhowardceramics.co.uk',
-        desktopImages: ['/img/projects/helen-howard/helen-howard-1.png', '/img/projects/helen-howard/helen-howard-2.png', '/img/projects/helen-howard/helen-howard-3.png', '/img/projects/helen-howard/helen-howard-4.png'],
+        desktopImages: ['/img/projects/helen-howard/helen-howard-1.webp', '/img/projects/helen-howard/helen-howard-2.webp', '/img/projects/helen-howard/helen-howard-3.webp', '/img/projects/helen-howard/helen-howard-4.webp'],
         mobileImages: []
     },
     {
@@ -48,7 +48,7 @@ export const projectData = [
         creditName: 'Billy',
         creditLink: 'https://bmbservices.netlify.app',
         visitLink: 'https://www.isabelknowland.com',
-        desktopImages: ['/img/projects/isabel-knowland/isabel-knowland-1.png', '/img/projects/isabel-knowland/isabel-knowland-2.png', '/img/projects/isabel-knowland/isabel-knowland-3.png'],
+        desktopImages: ['/img/projects/isabel-knowland/isabel-knowland-1.webp', '/img/projects/isabel-knowland/isabel-knowland-2.webp', '/img/projects/isabel-knowland/isabel-knowland-3.webp'],
         mobileImages: []
     }
 ]
