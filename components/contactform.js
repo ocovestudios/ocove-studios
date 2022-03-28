@@ -29,7 +29,7 @@ const ContactForm = () => {
         await formTitleFade.start({ opacity: 0 })
         await buttonControls.start({ opacity: 0, transition: { duration: .27 }, transitionEnd: { display: "none" } })
         await buttonLineControls.start({ strokeDashoffset: [0, 820], transition: { duration: 1.3, ease: [0.12, 0, 0.07, 0] } })
-        await buttonWrapFade.start({ display: 'none' })
+        await buttonWrapFade.start({ display: "none" })
         await formControls.start({ display: "flex" })
         await formLine1Controls.start("animate")
         await formLine2Controls.start("animate")
@@ -37,7 +37,7 @@ const ContactForm = () => {
         await formInput1Controls.start("animate")
         await formInput2Controls.start("animate")
         await formInput3Controls.start("animate")
-        return await formButtonFade.start({ opacity: 1, transition: { duration: .1, delay: .1} })
+        return await formButtonFade.start({ opacity: 1, transition: { duration: .1, delay: .1 } })
     }
 
     return (
@@ -48,16 +48,16 @@ const ContactForm = () => {
                     <motion.rect className="form-button__stroke" animate={buttonLineControls} x="1" y="1" width="338" height="72" fill="none" stroke="#323232" stroke-width="2" />
                 </svg>
             </motion.div>
-            <motion.form className="contact-form" animate={formControls}>
+            <motion.form className="contact-form" animate={formControls} action="https://formspree.io/f/mknyvnna" method="POST">
                 <motion.div className="contact-form__details">
-                    <motion.input animate={formInput1Controls} initial="initial" variants={inputVariants} type='text' placeholder="NAME" />
-                    <motion.input animate={formInput2Controls} initial="initial" variants={inputVariants} type='text' placeholder="EMAIL" />
+                    <motion.input animate={formInput1Controls} initial="initial" variants={inputVariants} type="text" name="name" placeholder="NAME" />
+                    <motion.input animate={formInput2Controls} initial="initial" variants={inputVariants} type="text" name="email" placeholder="EMAIL" />
                     <motion.div className="horizontal-line" variants={lineVariants} animate={formLine1Controls} initial="initial"></motion.div>
                     <motion.div className="horizontal-line" variants={lineVariants} animate={formLine2Controls} initial="initial"></motion.div>
                 </motion.div>
-                <motion.textarea animate={formInput3Controls} initial="initial" variants={inputVariants} type='text' placeholder="MESSAGE" className="contact-form__message" />
+                <motion.textarea animate={formInput3Controls} initial="initial" variants={inputVariants} type="text" name="message" placeholder="MESSAGE" className="contact-form__message" />
                 <motion.div className="horizontal-line" variants={lineVariants} animate={formLine3Controls} initial="initial"></motion.div>
-                <motion.button animate={formButtonFade} initial={{ opacity: 0 }} className='contact__form-submit'>SEND</motion.button>
+                <motion.button animate={formButtonFade} initial={{ opacity: 0 }} className="contact__form-submit">SEND</motion.button>
             </motion.form>
         </motion.div>
     );
