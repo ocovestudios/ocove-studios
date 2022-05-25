@@ -81,9 +81,11 @@ const Services = () => {
                         </motion.div>
                     </div>
                 </div>
+
                 <div className="services__form-container">
                     <ContactForm />
                 </div>
+                <a href="mailto:ocovestudios@gmail.com"><motion.button className="services__email-button--mobile"> TALK TO US </motion.button></a>
 
                 <div className="services__contact-container">
                     <div className="services__header-container">
